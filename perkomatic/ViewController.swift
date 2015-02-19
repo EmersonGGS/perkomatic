@@ -9,17 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var loginBtn: UIButton!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+        
+        loginBtn.clipsToBounds = true
+        loginBtn.layer.cornerRadius = 10.0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
+        
+        
+        
     }
 
 
 }
 
+ 

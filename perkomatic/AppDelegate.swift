@@ -14,8 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+        Parse.setApplicationId("vFCvGpnGpyfYkdFFQy3br9wTofyfXUAG73gdnipC",
+            clientKey: "lutIy1f7fP54e3cRFHtUwkNghFihl67BEMiGGzN5")
+        PFUser.enableAutomaticUser()
+        
         return true
     }
 

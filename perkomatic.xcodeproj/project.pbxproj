@@ -7,12 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6393B56A1A95323A008511E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6393B5691A95323A008511E2 /* CFNetwork.framework */; };
+		6393B56C1A9536FD008511E2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6393B56B1A9536FD008511E2 /* libsqlite3.0.dylib */; };
+		63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CBE1A954A1800523B06 /* Raleway-Black.ttf */; };
+		63960CD11A954A1800523B06 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CBF1A954A1800523B06 /* Raleway-BlackItalic.ttf */; };
+		63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC01A954A1800523B06 /* Raleway-Bold.ttf */; };
+		63960CD31A954A1800523B06 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC11A954A1800523B06 /* Raleway-BoldItalic.ttf */; };
+		63960CD41A954A1800523B06 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC21A954A1800523B06 /* Raleway-ExtraBold.ttf */; };
+		63960CD51A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC31A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf */; };
+		63960CD61A954A1800523B06 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC41A954A1800523B06 /* Raleway-ExtraLight.ttf */; };
+		63960CD71A954A1800523B06 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC51A954A1800523B06 /* Raleway-ExtraLightItalic.ttf */; };
+		63960CD81A954A1800523B06 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC61A954A1800523B06 /* Raleway-Italic.ttf */; };
+		63960CD91A954A1800523B06 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC71A954A1800523B06 /* Raleway-Light.ttf */; };
+		63960CDA1A954A1800523B06 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC81A954A1800523B06 /* Raleway-LightItalic.ttf */; };
+		63960CDB1A954A1800523B06 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC91A954A1800523B06 /* Raleway-Medium.ttf */; };
+		63960CDC1A954A1800523B06 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCA1A954A1800523B06 /* Raleway-MediumItalic.ttf */; };
+		63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCB1A954A1800523B06 /* Raleway-Regular.ttf */; };
+		63960CDE1A954A1800523B06 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCC1A954A1800523B06 /* Raleway-SemiBold.ttf */; };
+		63960CDF1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCD1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf */; };
+		63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCE1A954A1800523B06 /* Raleway-Thin.ttf */; };
+		63960CE11A954A1800523B06 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CCF1A954A1800523B06 /* Raleway-ThinItalic.ttf */; };
 		63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */; };
 		63ED32CB1A9273BA00ECAD33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32CA1A9273BA00ECAD33 /* ViewController.swift */; };
 		63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED32CC1A9273BA00ECAD33 /* Main.storyboard */; };
 		63ED32D01A9273BA00ECAD33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ED32CF1A9273BA00ECAD33 /* Images.xcassets */; };
 		63ED32D31A9273BA00ECAD33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63ED32D11A9273BA00ECAD33 /* LaunchScreen.xib */; };
 		63ED32DF1A9273BA00ECAD33 /* perkomaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32DE1A9273BA00ECAD33 /* perkomaticTests.swift */; };
+		63ED32EF1A9277AD00ECAD33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32EE1A9277AD00ECAD33 /* AudioToolbox.framework */; };
+		63ED32F11A9277B700ECAD33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32F01A9277B700ECAD33 /* Foundation.framework */; };
+		63ED32F31A9277BE00ECAD33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32F21A9277BE00ECAD33 /* CoreGraphics.framework */; };
+		63ED32F51A9277C900ECAD33 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32F41A9277C900ECAD33 /* CoreLocation.framework */; };
+		63ED32F71A9277D800ECAD33 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32F61A9277D800ECAD33 /* libz.dylib */; };
+		63ED32F91A9277DF00ECAD33 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32F81A9277DF00ECAD33 /* MobileCoreServices.framework */; };
+		63ED32FB1A9277E600ECAD33 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32FA1A9277E600ECAD33 /* QuartzCore.framework */; };
+		63ED32FD1A9277EF00ECAD33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32FC1A9277EF00ECAD33 /* Security.framework */; };
+		63ED32FF1A9277F600ECAD33 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED32FE1A9277F600ECAD33 /* StoreKit.framework */; };
+		63ED33011A92780100ECAD33 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33001A92780100ECAD33 /* SystemConfiguration.framework */; };
+		63ED33071A927AC100ECAD33 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33021A927AC100ECAD33 /* Bolts.framework */; };
+		63ED33081A927AC100ECAD33 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33031A927AC100ECAD33 /* Parse.framework */; };
+		63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */; };
+		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
+		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +61,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6393B5691A95323A008511E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6393B56B1A9536FD008511E2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		63960CBE1A954A1800523B06 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		63960CBF1A954A1800523B06 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		63960CC01A954A1800523B06 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		63960CC11A954A1800523B06 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		63960CC21A954A1800523B06 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		63960CC31A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		63960CC41A954A1800523B06 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		63960CC51A954A1800523B06 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		63960CC61A954A1800523B06 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		63960CC71A954A1800523B06 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		63960CC81A954A1800523B06 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		63960CC91A954A1800523B06 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		63960CCA1A954A1800523B06 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		63960CCB1A954A1800523B06 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		63960CCC1A954A1800523B06 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		63960CCD1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		63960CCE1A954A1800523B06 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		63960CCF1A954A1800523B06 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 		63ED32C31A9273BA00ECAD33 /* perkomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perkomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED32C71A9273BA00ECAD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +91,22 @@
 		63ED32D81A9273BA00ECAD33 /* perkomaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perkomaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED32DD1A9273BA00ECAD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63ED32DE1A9273BA00ECAD33 /* perkomaticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perkomaticTests.swift; sourceTree = "<group>"; };
+		63ED32E81A92740000ECAD33 /* perkomatic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "perkomatic-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		63ED32EE1A9277AD00ECAD33 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		63ED32F01A9277B700ECAD33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63ED32F21A9277BE00ECAD33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63ED32F41A9277C900ECAD33 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63ED32F61A9277D800ECAD33 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		63ED32F81A9277DF00ECAD33 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		63ED32FA1A9277E600ECAD33 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		63ED32FC1A9277EF00ECAD33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		63ED32FE1A9277F600ECAD33 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		63ED33001A92780100ECAD33 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63ED33021A927AC100ECAD33 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
+		63ED33031A927AC100ECAD33 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../ParseCrashReporting.framework; sourceTree = "<group>"; };
+		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +114,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6393B56C1A9536FD008511E2 /* libsqlite3.0.dylib in Frameworks */,
+				6393B56A1A95323A008511E2 /* CFNetwork.framework in Frameworks */,
+				63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */,
+				63ED33011A92780100ECAD33 /* SystemConfiguration.framework in Frameworks */,
+				63ED32FF1A9277F600ECAD33 /* StoreKit.framework in Frameworks */,
+				63ED32FD1A9277EF00ECAD33 /* Security.framework in Frameworks */,
+				63ED32FB1A9277E600ECAD33 /* QuartzCore.framework in Frameworks */,
+				63ED32F91A9277DF00ECAD33 /* MobileCoreServices.framework in Frameworks */,
+				63ED32F71A9277D800ECAD33 /* libz.dylib in Frameworks */,
+				63ED32F51A9277C900ECAD33 /* CoreLocation.framework in Frameworks */,
+				63ED32F31A9277BE00ECAD33 /* CoreGraphics.framework in Frameworks */,
+				63ED33071A927AC100ECAD33 /* Bolts.framework in Frameworks */,
+				63ED32F11A9277B700ECAD33 /* Foundation.framework in Frameworks */,
+				63ED33081A927AC100ECAD33 /* Parse.framework in Frameworks */,
+				63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */,
+				63ED32EF1A9277AD00ECAD33 /* AudioToolbox.framework in Frameworks */,
+				63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +144,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6393B5681A9531C8008511E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6393B56B1A9536FD008511E2 /* libsqlite3.0.dylib */,
+				6393B5691A95323A008511E2 /* CFNetwork.framework */,
+				63ED33001A92780100ECAD33 /* SystemConfiguration.framework */,
+				63ED32FE1A9277F600ECAD33 /* StoreKit.framework */,
+				63ED32FC1A9277EF00ECAD33 /* Security.framework */,
+				63ED32FA1A9277E600ECAD33 /* QuartzCore.framework */,
+				63ED32F81A9277DF00ECAD33 /* MobileCoreServices.framework */,
+				63ED32F61A9277D800ECAD33 /* libz.dylib */,
+				63ED33021A927AC100ECAD33 /* Bolts.framework */,
+				63ED33031A927AC100ECAD33 /* Parse.framework */,
+				63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */,
+				63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */,
+				63ED33061A927AC100ECAD33 /* ParseUI.framework */,
+				63ED32F41A9277C900ECAD33 /* CoreLocation.framework */,
+				63ED32F21A9277BE00ECAD33 /* CoreGraphics.framework */,
+				63ED32F01A9277B700ECAD33 /* Foundation.framework */,
+				63ED32EE1A9277AD00ECAD33 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63960CAB1A95460D00523B06 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				63960CBE1A954A1800523B06 /* Raleway-Black.ttf */,
+				63960CBF1A954A1800523B06 /* Raleway-BlackItalic.ttf */,
+				63960CC01A954A1800523B06 /* Raleway-Bold.ttf */,
+				63960CC11A954A1800523B06 /* Raleway-BoldItalic.ttf */,
+				63960CC21A954A1800523B06 /* Raleway-ExtraBold.ttf */,
+				63960CC31A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf */,
+				63960CC41A954A1800523B06 /* Raleway-ExtraLight.ttf */,
+				63960CC51A954A1800523B06 /* Raleway-ExtraLightItalic.ttf */,
+				63960CC61A954A1800523B06 /* Raleway-Italic.ttf */,
+				63960CC71A954A1800523B06 /* Raleway-Light.ttf */,
+				63960CC81A954A1800523B06 /* Raleway-LightItalic.ttf */,
+				63960CC91A954A1800523B06 /* Raleway-Medium.ttf */,
+				63960CCA1A954A1800523B06 /* Raleway-MediumItalic.ttf */,
+				63960CCB1A954A1800523B06 /* Raleway-Regular.ttf */,
+				63960CCC1A954A1800523B06 /* Raleway-SemiBold.ttf */,
+				63960CCD1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf */,
+				63960CCE1A954A1800523B06 /* Raleway-Thin.ttf */,
+				63960CCF1A954A1800523B06 /* Raleway-ThinItalic.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		63ED32BA1A9273BA00ECAD33 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +214,14 @@
 		63ED32C51A9273BA00ECAD33 /* perkomatic */ = {
 			isa = PBXGroup;
 			children = (
+				63ED32E81A92740000ECAD33 /* perkomatic-Bridging-Header.h */,
 				63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */,
 				63ED32CA1A9273BA00ECAD33 /* ViewController.swift */,
 				63ED32CC1A9273BA00ECAD33 /* Main.storyboard */,
 				63ED32CF1A9273BA00ECAD33 /* Images.xcassets */,
 				63ED32D11A9273BA00ECAD33 /* LaunchScreen.xib */,
+				63960CAB1A95460D00523B06 /* fonts */,
+				6393B5681A9531C8008511E2 /* Frameworks */,
 				63ED32C61A9273BA00ECAD33 /* Supporting Files */,
 			);
 			path = perkomatic;
@@ -192,9 +332,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63960CD41A954A1800523B06 /* Raleway-ExtraBold.ttf in Resources */,
+				63960CDF1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */,
+				63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */,
+				63960CD71A954A1800523B06 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */,
+				63960CDA1A954A1800523B06 /* Raleway-LightItalic.ttf in Resources */,
+				63960CD61A954A1800523B06 /* Raleway-ExtraLight.ttf in Resources */,
+				63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */,
 				63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */,
+				63960CDB1A954A1800523B06 /* Raleway-Medium.ttf in Resources */,
+				63960CE11A954A1800523B06 /* Raleway-ThinItalic.ttf in Resources */,
+				63960CDE1A954A1800523B06 /* Raleway-SemiBold.ttf in Resources */,
+				63960CD31A954A1800523B06 /* Raleway-BoldItalic.ttf in Resources */,
 				63ED32D31A9273BA00ECAD33 /* LaunchScreen.xib in Resources */,
+				63960CD11A954A1800523B06 /* Raleway-BlackItalic.ttf in Resources */,
+				63960CD91A954A1800523B06 /* Raleway-Light.ttf in Resources */,
 				63ED32D01A9273BA00ECAD33 /* Images.xcassets in Resources */,
+				63960CDC1A954A1800523B06 /* Raleway-MediumItalic.ttf in Resources */,
+				63960CD81A954A1800523B06 /* Raleway-Italic.ttf in Resources */,
+				63960CD51A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +494,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = perkomatic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "perkomatic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +511,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = perkomatic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "perkomatic-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +576,7 @@
 				63ED32E41A9273BA00ECAD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63ED32E51A9273BA00ECAD33 /* Build configuration list for PBXNativeTarget "perkomaticTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +585,7 @@
 				63ED32E71A9273BA00ECAD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

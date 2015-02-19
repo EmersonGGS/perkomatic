@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29652B36-5D37-4B6B-BF31-AA2D0E341D06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>perkomatic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>916780D8815401C83044A886A3B6E788A163CE1F</key>
+		<string>https://github.com/EmersonGGS/perkomatic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>perkomatic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>916780D8815401C83044A886A3B6E788A163CE1F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/EmersonGGS/perkomatic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>916780D8815401C83044A886A3B6E788A163CE1F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>916780D8815401C83044A886A3B6E788A163CE1F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>perkomatic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
