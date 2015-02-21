@@ -19,6 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientKey: "lutIy1f7fP54e3cRFHtUwkNghFihl67BEMiGGzN5")
         PFUser.enableAutomaticUser()
         
+        //navigation style
+        
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        //navigationBarAppearace.tintColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+        navigationBarAppearace.barTintColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor(red: 126/255.0, green: 140/255.0, blue: 140/255.0, alpha: 1.0)]
+        navigationBarAppearace.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Raleway-Light", size: 20)!]
+
         return true
     }
 
