@@ -56,7 +56,23 @@ class sideBarTableView: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        if (indexPath.row == 0) {
+            cell!.textLabel?.text = "Dashboard"
+        }
+        
+        else if (indexPath.row == 1) {
+            cell!.textLabel?.text = "Groups"
+        }
+        
+        else if (indexPath.row == 2) {
+            cell!.textLabel?.text = "Order"
+        }
+        
+        else {
+            cell!.textLabel?.text = "Friends"
+        }
+        
+        
         
         return cell!
     }

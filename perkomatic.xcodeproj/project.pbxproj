@@ -56,6 +56,7 @@
 		63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */; };
 		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
 		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
+		6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6565F24B1A9BC4EB0018FE44 /* menuIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../ParseCrashReporting.framework; sourceTree = "<group>"; };
 		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
+		6565F24B1A9BC4EB0018FE44 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 				63ED32CC1A9273BA00ECAD33 /* Main.storyboard */,
 				63ED32CF1A9273BA00ECAD33 /* Images.xcassets */,
 				63ED32D11A9273BA00ECAD33 /* LaunchScreen.xib */,
+				6565F24A1A9BC4D70018FE44 /* images */,
 				63960CAB1A95460D00523B06 /* fonts */,
 				63A401151A984FA40038569D /* Library */,
 				6393B5681A9531C8008511E2 /* Frameworks */,
@@ -282,6 +285,14 @@
 				63ED32DD1A9273BA00ECAD33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6565F24A1A9BC4D70018FE44 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6565F24B1A9BC4EB0018FE44 /* menuIcon.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 				63960CD41A954A1800523B06 /* Raleway-ExtraBold.ttf in Resources */,
 				63960CDF1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */,
+				6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */,
 				63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */,
 				63960CD71A954A1800523B06 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */,

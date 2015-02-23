@@ -18,6 +18,9 @@ class dashboardVC: UIViewController {
         
         self.title = "Dashboard"
         
+        let logo = UIImage(named: "menuIcon.png")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
     
     override func didReceiveMemoryWarning() {

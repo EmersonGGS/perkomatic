@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -33,27 +33,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Perkomatic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-yK-w1r">
-                                <rect key="frame" x="184" y="20" width="232" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perkomatic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-yK-w1r">
+                                <rect key="frame" x="184" y="1" width="232" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="GMs-2V-77M"/>
+                                    <constraint firstAttribute="width" secondItem="NQd-yK-w1r" secondAttribute="height" multiplier="29:11" id="P4r-eQ-t52"/>
+                                    <constraint firstAttribute="height" constant="88" id="oY9-os-g8K"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="42"/>
                                 <color key="textColor" red="0.47058826684951782" green="0.52549022436141968" blue="0.51372551918029785" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBw-9c-CEp">
-                                <rect key="frame" x="169" y="157" width="263" height="30"/>
+                                <rect key="frame" x="248" y="159" width="106" height="26"/>
                                 <color key="textColor" red="0.47058826684951782" green="0.4745098352432251" blue="0.4745098352432251" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbL-SM-y5P">
-                                <rect key="frame" x="169" y="230" width="263" height="30"/>
+                                <rect key="frame" x="250" y="232" width="102" height="26"/>
                                 <color key="textColor" red="0.47058826684951782" green="0.4745098352432251" blue="0.4745098352432251" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzf-v2-hYj">
-                                <rect key="frame" x="125" y="208" width="310" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzf-v2-hYj">
+                                <rect key="frame" x="145" y="208" width="310" height="1"/>
                                 <color key="backgroundColor" red="0.62745100259780884" green="0.63529413938522339" blue="0.63137257099151611" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="RFV-6e-rVD"/>
+                                    <constraint firstAttribute="width" secondItem="mzf-v2-hYj" secondAttribute="height" multiplier="310:1" id="dfZ-Ib-pa8"/>
+                                    <constraint firstAttribute="width" constant="310" id="fEX-Of-DIn"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-hz-hK1">
                                 <rect key="frame" x="145" y="310" width="310" height="48"/>
@@ -72,8 +82,8 @@
                                     <action selector="loginBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oXS-Vc-uO4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-73-RQW">
-                                <rect key="frame" x="257" y="570" width="86" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-73-RQW">
+                                <rect key="frame" x="260" y="566" width="80" height="38"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.24705883860588074" green="0.66274511814117432" blue="0.3490196168422699" alpha="1" colorSpace="deviceRGB"/>
@@ -83,8 +93,12 @@
                                     <segue destination="ZHB-KM-JTS" kind="show" id="RPF-Rc-qtg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-pc-DQF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-pc-DQF">
                                 <rect key="frame" x="189" y="547" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BQc-go-jsW"/>
+                                    <constraint firstAttribute="width" constant="222" id="slp-XI-J7a"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -102,7 +116,7 @@
                             <constraint firstAttribute="centerX" secondItem="mzf-v2-hYj" secondAttribute="centerX" id="LyR-Of-W1g"/>
                             <constraint firstAttribute="centerX" secondItem="zBw-9c-CEp" secondAttribute="centerX" id="RZl-Jy-LIA"/>
                             <constraint firstAttribute="centerY" secondItem="EAq-hz-hK1" secondAttribute="centerY" constant="-34" id="Wbw-sH-wQl"/>
-                            <constraint firstAttribute="centerX" secondItem="NQd-yK-w1r" secondAttribute="centerX" constant="-8" id="XJn-XT-OxM"/>
+                            <constraint firstAttribute="centerX" secondItem="NQd-yK-w1r" secondAttribute="centerX" id="XJn-XT-OxM"/>
                             <constraint firstAttribute="centerY" secondItem="cbL-SM-y5P" secondAttribute="centerY" constant="55" id="a2t-Ct-Fh5"/>
                             <constraint firstAttribute="centerY" secondItem="iS7-pc-DQF" secondAttribute="centerY" constant="-258" id="aoc-Rk-eAn"/>
                             <constraint firstAttribute="centerY" secondItem="NQd-yK-w1r" secondAttribute="centerY" constant="255" id="mc8-rP-IFG"/>
@@ -117,6 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="69"/>
         </scene>
         <!--Manage GroupVC-->
         <scene sceneID="4Du-Iu-aad">
@@ -134,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sge-K3-rzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240" y="-578"/>
+            <point key="canvasLocation" x="2180" y="-616"/>
         </scene>
         <!--FriendsVC-->
         <scene sceneID="ZCi-sp-7HI">
@@ -229,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgD-GF-Mo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2928" y="-578"/>
+            <point key="canvasLocation" x="2180" y="69"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="HNa-N0-ML5">
@@ -244,17 +259,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="ox3-Ho-x43">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="fEW-qX-QxM">
-                            <connections>
-                                <action selector="toggleNavMenu:" destination="ww6-pP-Tp3" id="nmB-BZ-X4A"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Dashboard" id="ox3-Ho-x43"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iR-3E-kon" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1514" y="136"/>
+            <point key="canvasLocation" x="1496" y="69"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="ANv-Ri-exK">
@@ -384,7 +393,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8z-rF-blO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="-547"/>
+            <point key="canvasLocation" x="804" y="-616"/>
         </scene>
         <!--Side Bar Nav Controller-->
         <scene sceneID="8UW-bd-NGd">
@@ -402,7 +411,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqN-Ej-FlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="136"/>
+            <point key="canvasLocation" x="804" y="69"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
