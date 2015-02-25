@@ -101,7 +101,7 @@ class sideBarTableView: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("manageGroupVC") as UIViewController
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("orderVC") as UIViewController
             break
         default:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("friendsVC") as UIViewController

@@ -57,6 +57,7 @@
 		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
 		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
 		6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6565F24B1A9BC4EB0018FE44 /* menuIcon.png */; };
+		65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA6DF1A9D424C001C81A8 /* orderVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
 		6565F24B1A9BC4EB0018FE44 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
+		65FFA6DF1A9D424C001C81A8 /* orderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				63A401111A9848BC0038569D /* manageGroupVC.swift */,
 				63A401131A9849050038569D /* friendsVC.swift */,
 				6373E78F1A966E0F00CC754C /* dashboardVC.swift */,
+				65FFA6DF1A9D424C001C81A8 /* orderVC.swift */,
 				6373E78D1A965C7400CC754C /* signUpVC.swift */,
 				63ED32CA1A9273BA00ECAD33 /* ViewController.swift */,
 				63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */,
@@ -424,6 +427,7 @@
 				63A4011D1A98523D0038569D /* sideBarTableView.swift in Sources */,
 				63A401191A984FA40038569D /* ENSideMenuNavigationController.swift in Sources */,
 				63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */,
+				65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,9 +18,16 @@ class dashboardVC: UIViewController {
         
         self.title = "Dashboard"
         
-        let logo = UIImage(named: "menuIcon.png")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
+        //Adding navigation button to nav bar
+        let menuButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        menuButton.frame = CGRectMake(0, 0, 30, 30)
+        menuButton.setImage(UIImage(named:"menuIcon.png"), forState: UIControlState.Normal)
+        menuButton.addTarget(self, action: "toggleNavMenu:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        var leftBarButtonItem: UIBarButtonItem = UIBarButtonItem(customView: menuButton)
+        
+        self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
+
     }
     
     override func didReceiveMemoryWarning() {
