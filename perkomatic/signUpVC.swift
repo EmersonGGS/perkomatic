@@ -16,10 +16,12 @@ class signUpVC: UIViewController {
     
     @IBAction func signUpSubmit(sender: AnyObject) {
         //init pfuser object, and assign values
+        //init Freindslist
         var user = PFUser()
         user.username = usernameTxt.text
         user.password = passwordTxt.text
         user.email = emailTxt.text
+        //user.addObject("", forKey: "Friends")
         
         //submit information to parse DB
         user.signUpInBackgroundWithBlock {

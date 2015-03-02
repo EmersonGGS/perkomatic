@@ -35,6 +35,7 @@
 		63A401191A984FA40038569D /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A401171A984FA40038569D /* ENSideMenuNavigationController.swift */; };
 		63A4011B1A9851C40038569D /* sideBarNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4011A1A9851C40038569D /* sideBarNavController.swift */; };
 		63A4011D1A98523D0038569D /* sideBarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4011C1A98523D0038569D /* sideBarTableView.swift */; };
+		63E3E39F1AA278F100F79723 /* addFriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E3E39E1AA278F100F79723 /* addFriend.png */; };
 		63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */; };
 		63ED32CB1A9273BA00ECAD33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32CA1A9273BA00ECAD33 /* ViewController.swift */; };
 		63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED32CC1A9273BA00ECAD33 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */; };
 		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
 		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
+		63F9F2C91AA3A7CF00F10550 /* friendProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F9F2C81AA3A7CF00F10550 /* friendProfile.png */; };
 		6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6565F24B1A9BC4EB0018FE44 /* menuIcon.png */; };
 		65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA6DF1A9D424C001C81A8 /* orderVC.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +101,7 @@
 		63A401171A984FA40038569D /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		63A4011A1A9851C40038569D /* sideBarNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarNavController.swift; sourceTree = "<group>"; };
 		63A4011C1A98523D0038569D /* sideBarTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarTableView.swift; sourceTree = "<group>"; };
+		63E3E39E1AA278F100F79723 /* addFriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFriend.png; sourceTree = "<group>"; };
 		63ED32C31A9273BA00ECAD33 /* perkomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perkomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED32C71A9273BA00ECAD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../ParseCrashReporting.framework; sourceTree = "<group>"; };
 		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
+		63F9F2C81AA3A7CF00F10550 /* friendProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendProfile.png; sourceTree = "<group>"; };
 		6565F24B1A9BC4EB0018FE44 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		65FFA6DF1A9D424C001C81A8 /* orderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -293,6 +297,8 @@
 		6565F24A1A9BC4D70018FE44 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				63F9F2C81AA3A7CF00F10550 /* friendProfile.png */,
+				63E3E39E1AA278F100F79723 /* addFriend.png */,
 				6565F24B1A9BC4EB0018FE44 /* menuIcon.png */,
 			);
 			name = images;
@@ -383,12 +389,14 @@
 				63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */,
 				6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */,
 				63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */,
+				63F9F2C91AA3A7CF00F10550 /* friendProfile.png in Resources */,
 				63960CD71A954A1800523B06 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */,
 				63960CDA1A954A1800523B06 /* Raleway-LightItalic.ttf in Resources */,
 				63960CD61A954A1800523B06 /* Raleway-ExtraLight.ttf in Resources */,
 				63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */,
 				63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */,
+				63E3E39F1AA278F100F79723 /* addFriend.png in Resources */,
 				63960CDB1A954A1800523B06 /* Raleway-Medium.ttf in Resources */,
 				63960CE11A954A1800523B06 /* Raleway-ThinItalic.ttf in Resources */,
 				63960CDE1A954A1800523B06 /* Raleway-SemiBold.ttf in Resources */,

@@ -27,6 +27,8 @@ class dashboardVC: UIViewController {
         var leftBarButtonItem: UIBarButtonItem = UIBarButtonItem(customView: menuButton)
         
         self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
+        
+        println("Im logged in!")
 
     }
     
