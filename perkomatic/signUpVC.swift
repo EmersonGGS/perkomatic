@@ -46,9 +46,7 @@ class signUpVC: UIViewController {
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         
-        //style signup button
-        signupBtn.clipsToBounds = true
-        signupBtn.layer.cornerRadius = 5.0
+
     }
     
     override func didReceiveMemoryWarning() {

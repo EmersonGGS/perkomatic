@@ -60,11 +60,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         //register cell
         self.friendTable.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        
-        
-        //define background color of view
-        self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+
         
         self.title = "Friends"
         

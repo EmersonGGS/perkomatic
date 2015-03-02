@@ -18,9 +18,6 @@ class ViewController: UIViewController {
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         
-        //style login button
-        loginBtn.clipsToBounds = true
-        loginBtn.layer.cornerRadius = 5.0
     }
     
     @IBAction func loginBtnAction(sender: AnyObject) {
