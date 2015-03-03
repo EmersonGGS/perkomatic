@@ -57,8 +57,12 @@
 		63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */; };
 		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
 		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
+		63F765941AA53F860060AEE4 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F765931AA53F860060AEE4 /* menuIcon.png */; };
+		63F765A01AA54BAF0060AEE4 /* newAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F7659F1AA54BAF0060AEE4 /* newAdd.png */; };
+		63F765A41AA55BEE0060AEE4 /* addedFriendTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F765A31AA55BEE0060AEE4 /* addedFriendTable.png */; };
+		63F765A81AA588E60060AEE4 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F765A71AA588E60060AEE4 /* CustomTableViewCell.xib */; };
+		63F765AA1AA58A630060AEE4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F765A91AA58A630060AEE4 /* CustomTableViewCell.swift */; };
 		63F9F2C91AA3A7CF00F10550 /* friendProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F9F2C81AA3A7CF00F10550 /* friendProfile.png */; };
-		6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6565F24B1A9BC4EB0018FE44 /* menuIcon.png */; };
 		65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA6DF1A9D424C001C81A8 /* orderVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -128,8 +132,12 @@
 		63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../ParseCrashReporting.framework; sourceTree = "<group>"; };
 		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
+		63F765931AA53F860060AEE4 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
+		63F7659F1AA54BAF0060AEE4 /* newAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newAdd.png; sourceTree = "<group>"; };
+		63F765A31AA55BEE0060AEE4 /* addedFriendTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addedFriendTable.png; sourceTree = "<group>"; };
+		63F765A71AA588E60060AEE4 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		63F765A91AA58A630060AEE4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		63F9F2C81AA3A7CF00F10550 /* friendProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendProfile.png; sourceTree = "<group>"; };
-		6565F24B1A9BC4EB0018FE44 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		65FFA6DF1A9D424C001C81A8 /* orderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +257,8 @@
 			children = (
 				63ED32E81A92740000ECAD33 /* perkomatic-Bridging-Header.h */,
 				63A401111A9848BC0038569D /* manageGroupVC.swift */,
+				63F765A91AA58A630060AEE4 /* CustomTableViewCell.swift */,
+				63F765A71AA588E60060AEE4 /* CustomTableViewCell.xib */,
 				63A401131A9849050038569D /* friendsVC.swift */,
 				6373E78F1A966E0F00CC754C /* dashboardVC.swift */,
 				65FFA6DF1A9D424C001C81A8 /* orderVC.swift */,
@@ -297,9 +307,11 @@
 		6565F24A1A9BC4D70018FE44 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				63F7659F1AA54BAF0060AEE4 /* newAdd.png */,
+				63F765A31AA55BEE0060AEE4 /* addedFriendTable.png */,
+				63F765931AA53F860060AEE4 /* menuIcon.png */,
 				63F9F2C81AA3A7CF00F10550 /* friendProfile.png */,
 				63E3E39E1AA278F100F79723 /* addFriend.png */,
-				6565F24B1A9BC4EB0018FE44 /* menuIcon.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -387,12 +399,13 @@
 				63960CD41A954A1800523B06 /* Raleway-ExtraBold.ttf in Resources */,
 				63960CDF1A954A1800523B06 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */,
-				6565F24C1A9BC4EB0018FE44 /* menuIcon.png in Resources */,
 				63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */,
 				63F9F2C91AA3A7CF00F10550 /* friendProfile.png in Resources */,
+				63F765A01AA54BAF0060AEE4 /* newAdd.png in Resources */,
 				63960CD71A954A1800523B06 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */,
 				63960CDA1A954A1800523B06 /* Raleway-LightItalic.ttf in Resources */,
+				63F765941AA53F860060AEE4 /* menuIcon.png in Resources */,
 				63960CD61A954A1800523B06 /* Raleway-ExtraLight.ttf in Resources */,
 				63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */,
 				63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */,
@@ -404,7 +417,9 @@
 				63ED32D31A9273BA00ECAD33 /* LaunchScreen.xib in Resources */,
 				63960CD11A954A1800523B06 /* Raleway-BlackItalic.ttf in Resources */,
 				63960CD91A954A1800523B06 /* Raleway-Light.ttf in Resources */,
+				63F765A41AA55BEE0060AEE4 /* addedFriendTable.png in Resources */,
 				63ED32D01A9273BA00ECAD33 /* Images.xcassets in Resources */,
+				63F765A81AA588E60060AEE4 /* CustomTableViewCell.xib in Resources */,
 				63960CDC1A954A1800523B06 /* Raleway-MediumItalic.ttf in Resources */,
 				63960CD81A954A1800523B06 /* Raleway-Italic.ttf in Resources */,
 				63960CD51A954A1800523B06 /* Raleway-ExtraBoldItalic.ttf in Resources */,
@@ -436,6 +451,7 @@
 				63A401191A984FA40038569D /* ENSideMenuNavigationController.swift in Sources */,
 				63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */,
 				65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */,
+				63F765AA1AA58A630060AEE4 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

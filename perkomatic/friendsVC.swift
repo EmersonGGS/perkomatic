@@ -20,6 +20,10 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         super.viewDidLoad()
         
+        var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
+        
+        friendTable.registerNib(nib, forCellReuseIdentifier: "friendCell")
+        
         //retrieve current friends
         
         //define current user
@@ -55,12 +59,6 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 println("Error: \(error) \(error.userInfo!)")
             }
         }
-        
-        
-        
-        //register cell
-        self.friendTable.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-
         
         self.title = "Friends"
         
@@ -147,8 +145,10 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                         addedAlert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default,handler: nil))
                                                         
                                                         self.presentViewController(addedAlert, animated: true, completion: nil)
+                                                        self.addFriendText.text = ""
                                                     } else {
                                                         // There was a problem, check error.description
+                                                        self.addFriendText.text = ""
                                                     }
                                                 }
                                             }else{
@@ -157,6 +157,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                 
                                                 if contains(self.friendsArray,self.addFriendText.text) || self.addFriendText.text == currentUser.username
                                                 {
+                                                    self.addFriendText.text = ""
                                                     //do nothing
                                                 }
                                                 else{
@@ -216,13 +217,20 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.friendTable.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        
+        var cell: CustomTableViewCell = self.friendTable.dequeueReusableCellWithIdentifier("friendCell") as CustomTableViewCell
         
         var stringText = String(self.friendsArray[indexPath.row] as NSString)
-        println("Table view String = " + stringText)
-        
-        cell.textLabel!.text = stringText
         println(self.friendsArray)
+        
+        cell.loadItem(title: stringText, image: "addedFriendTable.png")
+        
+        //alternate cell background colour
+        if ( indexPath.row % 2 == 0 ){
+            cell.backgroundColor = UIColor(red: 248/255.0, green: 248/255.0, blue: 248/255.0, alpha: 1.0)
+        }else{
+            cell.backgroundColor = UIColor.whiteColor()
+        }
         
         return cell
     }
