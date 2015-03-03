@@ -9,6 +9,7 @@
 import UIKit
 
 class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     @IBOutlet var addFriendText: UITextField!
     
     var friendsArray : [String] = []

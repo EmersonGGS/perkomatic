@@ -1,29 +1,29 @@
 //
-//  manageGroupVC.swift
+//  createGroupVC.swift
 //  perkomatic
 //
-//  Created by Emerson Stewart on 2015-02-21.
+//  Created by Emerson Stewart on 2015-03-03.
 //  Copyright (c) 2015 Emerson Stewart. All rights reserved.
 //
 
 import UIKit
 
-class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet var groupTable: UITableView!
+class createGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var groupsArray : [String] = ["my group 1", "my group 2"]
     
+    @IBOutlet weak var addedMemberTable: UITableView!
+    @IBOutlet weak var availMembersTable: UITableView!
+   
     override func viewDidLoad() {
         
-        var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
+        super.viewDidLoad()
         
-        groupTable.registerNib(nib, forCellReuseIdentifier: "groupCell")
+        //var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         
-        //define background color of view
-        self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+        //friendTable.registerNib(nib, forCellReuseIdentifier: "friendCell")
         
-        self.title = "Groups"
+        self.title = "Friends"
         
         //Adding navigation button to nav bar
         let menuButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
@@ -54,12 +54,11 @@ class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell: CustomTableViewCell = self.groupTable.dequeueReusableCellWithIdentifier("groupCell") as CustomTableViewCell
+        var cell: CustomTableViewCell = self.addedMemberTable.dequeueReusableCellWithIdentifier("friendCell") as CustomTableViewCell
         
         var stringText = String(self.groupsArray[indexPath.row] as NSString)
-        println(self.groupsArray)
         
-        cell.loadItem(title: stringText, image: "groupIcon.png")
+        cell.loadItem(title: stringText, image: "addedFriendTable.png")
         
         //alternate cell background colour
         if ( indexPath.row % 2 == 0 ){
@@ -74,5 +73,5 @@ class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("clicked a cell")
     }
-
+    
 }
