@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </mutableArray>
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="rNy-tP-NfQ" customClass="notificationTableCell" customModule="perkomatic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rNy-tP-NfQ" id="euA-bn-NIg">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-52-DT0">
+                        <rect key="frame" x="224" y="0.0" width="96" height="60"/>
+                        <color key="backgroundColor" red="0.20392158627510071" green="0.59607845544815063" blue="0.85882359743118286" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="kLl-tB-Zyo"/>
+                            <constraint firstAttribute="width" constant="96" id="ojp-dk-2uh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
+                        <color key="textColor" red="0.92549026012420654" green="0.94117653369903564" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rh-vS-fgK">
+                        <rect key="frame" x="56" y="6" width="140" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="Zyp-vN-0Wf"/>
+                            <constraint firstAttribute="height" constant="48" id="lLx-0a-yH4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atv-Ih-yyk">
+                        <rect key="frame" x="8" y="16" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="U6K-gi-swT"/>
+                            <constraint firstAttribute="height" constant="28" id="ZoY-0C-5Yc"/>
+                            <constraint firstAttribute="width" secondItem="atv-Ih-yyk" secondAttribute="height" multiplier="1:1" id="iyE-aD-8O4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="leading" secondItem="3Rh-vS-fgK" secondAttribute="trailing" constant="28" id="6Fh-3j-kRX"/>
+                    <constraint firstItem="atv-Ih-yyk" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="8" id="Gmx-kJ-4iW"/>
+                    <constraint firstItem="atv-Ih-yyk" firstAttribute="leading" secondItem="euA-bn-NIg" secondAttribute="leadingMargin" id="H6o-jt-zLj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3Rh-vS-fgK" secondAttribute="bottom" constant="-3" id="JQw-6f-Bvj"/>
+                    <constraint firstAttribute="centerX" secondItem="atv-Ih-yyk" secondAttribute="centerX" constant="138" id="MDv-JP-CKm"/>
+                    <constraint firstAttribute="centerX" secondItem="d7k-52-DT0" secondAttribute="centerX" constant="-112" id="Q9M-nG-18F"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="-2" id="Rrg-gt-hna"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="leading" secondItem="atv-Ih-yyk" secondAttribute="trailing" constant="20" id="SLR-2a-u2m"/>
+                    <constraint firstAttribute="centerX" secondItem="3Rh-vS-fgK" secondAttribute="centerX" constant="34" id="UJv-Bu-Fv4"/>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="-8" id="WGQ-8t-DpO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="d7k-52-DT0" secondAttribute="trailing" constant="-8" id="WpL-3M-IAN"/>
+                    <constraint firstAttribute="centerY" secondItem="3Rh-vS-fgK" secondAttribute="centerY" id="Ymq-Us-Wpe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="atv-Ih-yyk" secondAttribute="bottom" constant="7" id="Zn7-VL-Z3U"/>
+                    <constraint firstAttribute="centerX" secondItem="d7k-52-DT0" secondAttribute="centerX" constant="-112" id="dR1-39-Kx1"/>
+                    <constraint firstAttribute="centerY" secondItem="d7k-52-DT0" secondAttribute="centerY" id="df5-U8-vly"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="d7k-52-DT0" secondAttribute="bottom" constant="-9" id="gus-wa-UUu"/>
+                    <constraint firstAttribute="centerY" secondItem="d7k-52-DT0" secondAttribute="centerY" id="mid-bF-Wm9"/>
+                    <constraint firstAttribute="centerY" secondItem="atv-Ih-yyk" secondAttribute="centerY" id="r4m-Xj-zqj"/>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="leading" secondItem="3Rh-vS-fgK" secondAttribute="trailing" constant="28" id="tQX-0D-Sw2"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="leading" secondItem="atv-Ih-yyk" secondAttribute="trailing" constant="20" id="yUL-lE-R30"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fromText" destination="3Rh-vS-fgK" id="gFd-H3-RCP"/>
+                <outlet property="notifImg" destination="atv-Ih-yyk" id="LDy-PW-iDt"/>
+                <outlet property="typeText" destination="d7k-52-DT0" id="YNY-9s-K8c"/>
+            </connections>
+            <point key="canvasLocation" x="419" y="262"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -14,6 +14,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var friendsArray : [String] = []
     
+    
     @IBOutlet var friendTable: UITableView!
     
     
@@ -87,6 +88,9 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     //add friend
     @IBAction func addFriendButton(sender: AnyObject) {
         
+        //notification variable
+        var userNotify = ""
+        
         //define current user
         var currentUser = PFUser.currentUser()
         if currentUser != nil {
@@ -141,6 +145,20 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                 object.saveInBackgroundWithBlock {
                                                     (success: Bool, error: NSError!) -> Void in
                                                     if (success) {
+                                                        
+                                                        //Add this to notifications for other user
+                                                        var notification = PFObject(className:"Notifications")
+                                                        notification["To"] = self.addFriendText.text
+                                                        notification["From"] = currentUser.username
+                                                        notification["Type"] = "Friend Request"
+                                                        notification.saveInBackgroundWithBlock {
+                                                            (success: Bool, error: NSError!) -> Void in
+                                                            if (success) {
+                                                                // The object has been saved.
+                                                            } else {
+                                                                // There was a problem, check error.description
+                                                            }
+                                                        }
                                                         let addedAlert = UIAlertController(title: "Added", message:
                                                             "Congrats on your new buddy!", preferredStyle: UIAlertControllerStyle.Alert)
                                                         addedAlert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default,handler: nil))
@@ -169,6 +187,21 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                     object.saveInBackgroundWithBlock {
                                                         (success: Bool, error: NSError!) -> Void in
                                                         if (success) {
+                                                            
+                                                            //Add this to notifications for other user
+                                                            var notification = PFObject(className:"Notifications")
+                                                            notification["To"] = self.addFriendText.text
+                                                            notification["From"] = currentUser.username
+                                                            notification["Type"] = "Friend Request"
+                                                            notification.saveInBackgroundWithBlock {
+                                                                (success: Bool, error: NSError!) -> Void in
+                                                                if (success) {
+                                                                    // The object has been saved.
+                                                                } else {
+                                                                    // There was a problem, check error.description
+                                                                }
+                                                            }
+                                                            
                                                             let addedAlert = UIAlertController(title: "Added", message:
                                                                 "Congrats on your new buddy!", preferredStyle: UIAlertControllerStyle.Alert)
                                                             addedAlert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default,handler: nil))

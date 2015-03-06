@@ -13,6 +13,7 @@
 		638DCF621AA63A7C008AEF19 /* createGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DCF611AA63A7C008AEF19 /* createGroupVC.swift */; };
 		6393B56A1A95323A008511E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6393B5691A95323A008511E2 /* CFNetwork.framework */; };
 		6393B56C1A9536FD008511E2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6393B56B1A9536FD008511E2 /* libsqlite3.0.dylib */; };
+		639453511AA8208A003D79CE /* notificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639453501AA8208A003D79CE /* notificationsVC.swift */; };
 		63960CD01A954A1800523B06 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CBE1A954A1800523B06 /* Raleway-Black.ttf */; };
 		63960CD11A954A1800523B06 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CBF1A954A1800523B06 /* Raleway-BlackItalic.ttf */; };
 		63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63960CC01A954A1800523B06 /* Raleway-Bold.ttf */; };
@@ -59,6 +60,8 @@
 		63ED33091A927AC100ECAD33 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */; };
 		63ED330A1A927AC100ECAD33 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */; };
 		63ED330B1A927AC100ECAD33 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED33061A927AC100ECAD33 /* ParseUI.framework */; };
+		63F6E7FC1AA8F39700E8D22B /* notificationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F6E7FB1AA8F39600E8D22B /* notificationTableCell.xib */; };
+		63F6E7FE1AA8F5A100E8D22B /* notificationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6E7FD1AA8F5A100E8D22B /* notificationTableCell.swift */; };
 		63F765941AA53F860060AEE4 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F765931AA53F860060AEE4 /* menuIcon.png */; };
 		63F765A01AA54BAF0060AEE4 /* newAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F7659F1AA54BAF0060AEE4 /* newAdd.png */; };
 		63F765A41AA55BEE0060AEE4 /* addedFriendTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F765A31AA55BEE0060AEE4 /* addedFriendTable.png */; };
@@ -85,6 +88,7 @@
 		638DCF611AA63A7C008AEF19 /* createGroupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createGroupVC.swift; sourceTree = "<group>"; };
 		6393B5691A95323A008511E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6393B56B1A9536FD008511E2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		639453501AA8208A003D79CE /* notificationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationsVC.swift; sourceTree = "<group>"; };
 		63960CBE1A954A1800523B06 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
 		63960CBF1A954A1800523B06 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
 		63960CC01A954A1800523B06 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 		63ED33041A927AC100ECAD33 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../ParseCrashReporting.framework; sourceTree = "<group>"; };
 		63ED33051A927AC100ECAD33 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		63ED33061A927AC100ECAD33 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
+		63F6E7FB1AA8F39600E8D22B /* notificationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = notificationTableCell.xib; sourceTree = "<group>"; };
+		63F6E7FD1AA8F5A100E8D22B /* notificationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationTableCell.swift; sourceTree = "<group>"; };
 		63F765931AA53F860060AEE4 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		63F7659F1AA54BAF0060AEE4 /* newAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newAdd.png; sourceTree = "<group>"; };
 		63F765A31AA55BEE0060AEE4 /* addedFriendTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addedFriendTable.png; sourceTree = "<group>"; };
@@ -260,13 +266,16 @@
 			isa = PBXGroup;
 			children = (
 				63ED32E81A92740000ECAD33 /* perkomatic-Bridging-Header.h */,
+				63F6E7FD1AA8F5A100E8D22B /* notificationTableCell.swift */,
+				63F6E7FB1AA8F39600E8D22B /* notificationTableCell.xib */,
 				63F765A91AA58A630060AEE4 /* CustomTableViewCell.swift */,
 				63F765A71AA588E60060AEE4 /* CustomTableViewCell.xib */,
 				638DCF611AA63A7C008AEF19 /* createGroupVC.swift */,
 				63A401111A9848BC0038569D /* manageGroupVC.swift */,
 				63A401131A9849050038569D /* friendsVC.swift */,
-				6373E78F1A966E0F00CC754C /* dashboardVC.swift */,
 				65FFA6DF1A9D424C001C81A8 /* orderVC.swift */,
+				6373E78F1A966E0F00CC754C /* dashboardVC.swift */,
+				639453501AA8208A003D79CE /* notificationsVC.swift */,
 				6373E78D1A965C7400CC754C /* signUpVC.swift */,
 				63ED32CA1A9273BA00ECAD33 /* ViewController.swift */,
 				63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */,
@@ -415,6 +424,7 @@
 				63960CD61A954A1800523B06 /* Raleway-ExtraLight.ttf in Resources */,
 				63960CD21A954A1800523B06 /* Raleway-Bold.ttf in Resources */,
 				63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */,
+				63F6E7FC1AA8F39700E8D22B /* notificationTableCell.xib in Resources */,
 				63E3E39F1AA278F100F79723 /* addFriend.png in Resources */,
 				63960CDB1A954A1800523B06 /* Raleway-Medium.ttf in Resources */,
 				63960CE11A954A1800523B06 /* Raleway-ThinItalic.ttf in Resources */,
@@ -452,6 +462,7 @@
 				6373E78E1A965C7400CC754C /* signUpVC.swift in Sources */,
 				63A4011B1A9851C40038569D /* sideBarNavController.swift in Sources */,
 				63A401141A9849050038569D /* friendsVC.swift in Sources */,
+				63F6E7FE1AA8F5A100E8D22B /* notificationTableCell.swift in Sources */,
 				63A401121A9848BC0038569D /* manageGroupVC.swift in Sources */,
 				6373E7901A966E0F00CC754C /* dashboardVC.swift in Sources */,
 				63ED32CB1A9273BA00ECAD33 /* ViewController.swift in Sources */,
@@ -460,6 +471,7 @@
 				63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */,
 				65FFA6E01A9D424C001C81A8 /* orderVC.swift in Sources */,
 				63F765AA1AA58A630060AEE4 /* CustomTableViewCell.swift in Sources */,
+				639453511AA8208A003D79CE /* notificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,7 @@ class sideBarTableView: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return 5
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -68,8 +68,12 @@ class sideBarTableView: UITableViewController {
             cell!.textLabel?.text = "Order"
         }
         
-        else {
+        else if (indexPath.row == 3) {
             cell!.textLabel?.text = "Friends"
+        }
+            
+        else {
+            cell!.textLabel?.text = "Notifications"
         }
         
         
@@ -103,8 +107,11 @@ class sideBarTableView: UITableViewController {
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("orderVC") as UIViewController
             break
-        default:
+        case 3:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("friendsVC") as UIViewController
+            break
+        default:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("notificationsVC") as UIViewController
             break
         }
         sideMenuController()?.setContentViewController(destViewController)
