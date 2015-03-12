@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,15 +19,14 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AI7-jc-b5P" id="PnY-rb-ytT">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-CO-ZIr">
-                        <rect key="frame" x="8" y="11" width="38" height="38"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-CO-ZIr">
+                        <rect key="frame" x="8" y="15" width="38" height="38"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="38" id="CUQ-a1-rxS"/>
-                            <constraint firstAttribute="height" constant="38" id="Dfn-9v-RS6"/>
+                            <constraint firstAttribute="width" constant="38" id="2Py-dN-4zD"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-Jx-GfB">
-                        <rect key="frame" x="65" y="15" width="207" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-Jx-GfB">
+                        <rect key="frame" x="65" y="-1" width="207" height="63"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="207" id="sPt-QE-EMi"/>
                             <constraint firstAttribute="height" constant="29" id="v3B-hL-068"/>
@@ -34,31 +34,47 @@
                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="22"/>
                         <color key="textColor" red="0.19543207908163263" green="0.19543207908163263" blue="0.19543207908163263" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sPt-QE-EMi"/>
+                                <exclude reference="v3B-hL-068"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="top" secondItem="PnY-rb-ytT" secondAttribute="topMargin" constant="3" id="2Vx-H1-K5j"/>
-                    <constraint firstAttribute="centerX" secondItem="JJA-CO-ZIr" secondAttribute="centerX" constant="133" id="35j-ps-qlm"/>
-                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="top" secondItem="PnY-rb-ytT" secondAttribute="topMargin" constant="3" id="B6P-w6-k47"/>
+                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="top" secondItem="PnY-rb-ytT" secondAttribute="topMargin" constant="6" id="6c6-o1-7Js"/>
                     <constraint firstItem="7J7-Jx-GfB" firstAttribute="leading" secondItem="JJA-CO-ZIr" secondAttribute="trailing" constant="19" id="CPl-Ch-Vje"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="JJA-CO-ZIr" secondAttribute="bottom" constant="2" id="HLj-ND-fYT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7J7-Jx-GfB" secondAttribute="trailing" constant="40" id="F0X-Sq-1pX"/>
                     <constraint firstItem="7J7-Jx-GfB" firstAttribute="top" secondItem="PnY-rb-ytT" secondAttribute="topMargin" constant="7" id="Lc5-uU-awf"/>
-                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="leading" secondItem="PnY-rb-ytT" secondAttribute="leadingMargin" id="OoJ-zX-Lpc"/>
-                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="leading" secondItem="PnY-rb-ytT" secondAttribute="leadingMargin" id="QP3-IR-1mz"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="JJA-CO-ZIr" secondAttribute="bottom" constant="3" id="RJv-2m-HVl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JJA-CO-ZIr" secondAttribute="bottom" constant="-1" id="NfI-NQ-veO"/>
                     <constraint firstAttribute="bottomMargin" secondItem="7J7-Jx-GfB" secondAttribute="bottom" constant="8" id="TLf-6n-W3b"/>
-                    <constraint firstAttribute="centerY" secondItem="JJA-CO-ZIr" secondAttribute="centerY" id="VIZ-dJ-eFI"/>
                     <constraint firstItem="7J7-Jx-GfB" firstAttribute="leading" secondItem="JJA-CO-ZIr" secondAttribute="trailing" constant="19" id="Zyf-zi-buh"/>
                     <constraint firstAttribute="trailingMargin" secondItem="7J7-Jx-GfB" secondAttribute="trailing" constant="40" id="Zzx-6A-4EZ"/>
                     <constraint firstAttribute="centerY" secondItem="7J7-Jx-GfB" secondAttribute="centerY" id="jIk-T8-gXN"/>
                     <constraint firstAttribute="centerX" secondItem="7J7-Jx-GfB" secondAttribute="centerX" constant="-8.5" id="jpy-wc-M9t"/>
+                    <constraint firstItem="7J7-Jx-GfB" firstAttribute="top" secondItem="PnY-rb-ytT" secondAttribute="topMargin" constant="-9" id="lkD-YZ-WOR"/>
+                    <constraint firstItem="JJA-CO-ZIr" firstAttribute="leading" secondItem="PnY-rb-ytT" secondAttribute="leadingMargin" id="p2X-MF-QTb"/>
+                    <constraint firstItem="7J7-Jx-GfB" firstAttribute="leading" secondItem="JJA-CO-ZIr" secondAttribute="trailing" constant="19" id="tBM-hJ-6Sr"/>
+                    <constraint firstItem="7J7-Jx-GfB" firstAttribute="centerY" secondItem="PnY-rb-ytT" secondAttribute="centerY" id="xsW-uk-L0s"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="CPl-Ch-Vje"/>
+                        <exclude reference="Lc5-uU-awf"/>
+                        <exclude reference="TLf-6n-W3b"/>
+                        <exclude reference="Zyf-zi-buh"/>
+                        <exclude reference="Zzx-6A-4EZ"/>
+                        <exclude reference="jIk-T8-gXN"/>
+                        <exclude reference="jpy-wc-M9t"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="friendImg" destination="JJA-CO-ZIr" id="YYb-sV-RDd"/>
                 <outlet property="friendName" destination="7J7-Jx-GfB" id="h1u-hP-CQ7"/>
             </connections>
-            <point key="canvasLocation" x="510" y="456"/>
+            <point key="canvasLocation" x="510" y="455"/>
         </tableViewCell>
     </objects>
 </document>

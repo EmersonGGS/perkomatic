@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class signUpVC: UIViewController {
+class signUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet var usernameTxt: UITextField!
     @IBOutlet var emailTxt: UITextField!
     @IBOutlet var passwordTxt: UITextField!
@@ -43,6 +43,10 @@ class signUpVC: UIViewController {
     @IBOutlet var signupBtn: UIButton!
     override func viewDidLoad() {
         
+        usernameTxt.delegate = self
+        emailTxt.delegate = self
+        passwordTxt.delegate = self
+        
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         
@@ -53,11 +57,14 @@ class signUpVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-        
-        
-        
-        
     }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+
     
     
 }

@@ -93,12 +93,6 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         //define current user
         var currentUser = PFUser.currentUser()
-        if currentUser != nil {
-            //if logged in
-        } else {
-            //if not logged in
-        }
-        
         
         ///////////////////////////
         // The Contingency Loop //
@@ -174,7 +168,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                 
                                                 //Add friend to user WITH friends already
                                                 
-                                                if contains(self.friendsArray,self.addFriendText.text) || self.addFriendText.text == currentUser.username
+                                                if contains(self.friendsArray,self.addFriendText.text) || self.addFriendText.text == currentUser.username || self.addFriendText.text == ""
                                                 {
                                                     self.addFriendText.text = ""
                                                     //do nothing
@@ -201,12 +195,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                                     // There was a problem, check error.description
                                                                 }
                                                             }
-                                                            
-                                                            let addedAlert = UIAlertController(title: "Added", message:
-                                                                "Congrats on your new buddy!", preferredStyle: UIAlertControllerStyle.Alert)
-                                                            addedAlert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default,handler: nil))
-                                                            
-                                                            self.presentViewController(addedAlert, animated: true, completion: nil)
+                                                           
                                                         } else {
                                                             // There was a problem, check error.description
                                                         }
@@ -228,11 +217,7 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                         }
                         //no user with that name exists
                     }else{
-                        let alertController = UIAlertController(title: "User Not Found", message:
-                            "Couldn't find that user, make sure you have it spelled correctly. Usernames are case sensitive.", preferredStyle: UIAlertControllerStyle.Alert)
-                        alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default,handler: nil))
-                        
-                        self.presentViewController(alertController, animated: true, completion: nil)
+                       
                     }
                 }
             }else {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var usernameTxt: UITextField!
     @IBOutlet var passwordTxt: UITextField!
@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
+        
+        usernameTxt.delegate = self
+        passwordTxt.delegate = self
         
     }
     
@@ -41,6 +44,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
     }
 }
 

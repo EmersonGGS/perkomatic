@@ -12,7 +12,7 @@ class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet var groupTable: UITableView!
     
-    var groupsArray : [String] = ["my group 1", "my group 2"]
+    var groupsArray : [String] = []
     
     override func viewDidLoad() {
         
@@ -34,6 +34,38 @@ class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         var leftBarButtonItem: UIBarButtonItem = UIBarButtonItem(customView: menuButton)
         
         self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
+        
+        //define current user
+        var currentUser = PFUser.currentUser()
+        
+        //retrieves current freinds list, alters, then re-uploads
+        
+        var getGroups = PFQuery(className:"Groups")
+        getGroups.whereKey("Members", equalTo:currentUser.username)
+        getGroups.findObjectsInBackgroundWithBlock{
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                //Utilize "Friends" information as table data
+                if let objects = objects as? [PFObject] {
+                    for object in objects {
+                        
+                        //if no friends are found
+                        println(object)
+                        var groupName = object["Name"] as AnyObject as String
+                        
+                        
+                        self.groupsArray.append(groupName)
+                        
+                        
+                        //When the query information is updated, reload table
+                        self.groupTable.reloadData()
+                    }
+                }
+            }else {
+                // Log details of the failure
+                println("Error: \(error) \(error.userInfo!)")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,5 +106,5 @@ class manageGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("clicked a cell")
     }
-
+    
 }

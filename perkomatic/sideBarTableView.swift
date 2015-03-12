@@ -17,7 +17,7 @@ class sideBarTableView: UITableViewController {
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
+        tableView.backgroundColor = UIColor.whiteColor()
         tableView.scrollsToTop = false
         
         // Preserve selection between presentations
@@ -116,16 +116,5 @@ class sideBarTableView: UITableViewController {
         }
         sideMenuController()?.setContentViewController(destViewController)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
