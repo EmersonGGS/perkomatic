@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -23,9 +23,10 @@
             <string>Raleway-Light</string>
             <string>Raleway-Light</string>
             <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
         </mutableArray>
         <mutableArray key="Raleway-Regular.ttf">
-            <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
@@ -62,7 +63,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-hz-hK1">
                                 <rect key="frame" x="35" y="308" width="250" height="48"/>
-                                <color key="backgroundColor" red="0.29411765933036804" green="0.70588237047195435" blue="0.42352944612503052" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="t2R-DK-U2y"/>
                                 </constraints>
@@ -100,7 +101,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZHB-KM-JTS" kind="modal" id="RPF-Rc-qtg"/>
+                                    <segue destination="ZHB-KM-JTS" kind="push" id="RPF-Rc-qtg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,6 +128,7 @@
                             <constraint firstItem="NQd-yK-w1r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="28" id="tia-oj-kXy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jZY-am-PPg"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="loginBtn" destination="EAq-hz-hK1" id="jve-aR-5Qe"/>
@@ -153,11 +155,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wL-zO-nc8">
                                 <rect key="frame" x="0.0" y="522" width="320" height="46"/>
-                                <color key="backgroundColor" red="0.25098040699958801" green="0.64705884456634521" blue="0.29411765933036804" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
                                 <state key="normal" title="Create Group">
                                     <color key="titleColor" red="0.93725496530532837" green="0.96862751245498657" blue="0.94117653369903564" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="NgC-C0-B9w" kind="push" id="QxF-nx-Tti"/>
@@ -174,23 +176,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addFriend.png" translatesAutoresizingMaskIntoConstraints="NO" id="bWu-DP-IjM">
                                 <rect key="frame" x="16" y="527" width="36" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Cvb-UY-kbd"/>
-                                    <constraint firstAttribute="width" constant="36" id="eYO-SD-a77"/>
+                                    <constraint firstAttribute="width" constant="36" id="C3P-lb-Xqq"/>
+                                    <constraint firstAttribute="height" constant="36" id="HcP-52-FLd"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="IfB-YG-2C8" secondAttribute="trailing" id="2ge-7M-Ncf"/>
-                            <constraint firstItem="IvL-7I-Z6a" firstAttribute="top" secondItem="bWu-DP-IjM" secondAttribute="bottom" constant="5" id="SKP-OA-0ir"/>
-                            <constraint firstItem="IfB-YG-2C8" firstAttribute="trailing" secondItem="8wL-zO-nc8" secondAttribute="trailing" id="TEO-YB-bmx"/>
-                            <constraint firstItem="8wL-zO-nc8" firstAttribute="centerY" secondItem="bWu-DP-IjM" secondAttribute="centerY" id="TgX-Ui-FS4"/>
-                            <constraint firstItem="8wL-zO-nc8" firstAttribute="bottom" secondItem="IvL-7I-Z6a" secondAttribute="top" id="Via-K9-j4u"/>
-                            <constraint firstItem="IfB-YG-2C8" firstAttribute="top" secondItem="KPa-oH-LEz" secondAttribute="bottom" id="fJQ-ld-8Hv"/>
-                            <constraint firstItem="8wL-zO-nc8" firstAttribute="leading" secondItem="6M9-hf-Nir" secondAttribute="leading" id="gf9-xy-teV"/>
-                            <constraint firstItem="bWu-DP-IjM" firstAttribute="leading" secondItem="6M9-hf-Nir" secondAttribute="leadingMargin" id="q71-aA-hy1"/>
-                            <constraint firstItem="IfB-YG-2C8" firstAttribute="leading" secondItem="8wL-zO-nc8" secondAttribute="leading" id="qp5-Ib-ypP"/>
-                            <constraint firstItem="8wL-zO-nc8" firstAttribute="top" secondItem="IfB-YG-2C8" secondAttribute="bottom" constant="1" id="ruX-K1-S6C"/>
+                            <constraint firstItem="IfB-YG-2C8" firstAttribute="leading" secondItem="6M9-hf-Nir" secondAttribute="leading" id="1DB-iJ-NHc"/>
+                            <constraint firstItem="8wL-zO-nc8" firstAttribute="bottom" secondItem="IvL-7I-Z6a" secondAttribute="top" id="9FE-lD-Q2s"/>
+                            <constraint firstItem="bWu-DP-IjM" firstAttribute="centerY" secondItem="8wL-zO-nc8" secondAttribute="centerY" id="Glc-bX-b1y"/>
+                            <constraint firstItem="8wL-zO-nc8" firstAttribute="top" secondItem="IfB-YG-2C8" secondAttribute="bottom" constant="1" id="RR6-f2-p23"/>
+                            <constraint firstAttribute="trailing" secondItem="IfB-YG-2C8" secondAttribute="trailing" id="WTq-cy-J74"/>
+                            <constraint firstItem="bWu-DP-IjM" firstAttribute="leading" secondItem="6M9-hf-Nir" secondAttribute="leadingMargin" id="aO3-iu-2fS"/>
+                            <constraint firstItem="IvL-7I-Z6a" firstAttribute="top" secondItem="bWu-DP-IjM" secondAttribute="bottom" constant="5" id="eJ3-mm-gNu"/>
+                            <constraint firstItem="IfB-YG-2C8" firstAttribute="top" secondItem="KPa-oH-LEz" secondAttribute="bottom" id="k2G-GB-UNv"/>
+                            <constraint firstItem="IfB-YG-2C8" firstAttribute="trailing" secondItem="8wL-zO-nc8" secondAttribute="trailing" id="twU-7U-Trw"/>
+                            <constraint firstItem="8wL-zO-nc8" firstAttribute="leading" secondItem="IfB-YG-2C8" secondAttribute="leading" id="uXk-dY-xps"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2QS-Wr-8Dc"/>
@@ -216,14 +218,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-5q-bFh">
                                 <rect key="frame" x="0.0" y="468" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.25098040700000002" green="0.64705884459999996" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="n50-0L-qs5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
                                 <state key="normal" title="Create">
-                                    <color key="titleColor" red="0.93725496529999996" green="0.96862751250000001" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.95337757486682106" green="1" blue="0.96503318115011583" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.95957041328021664" green="1" blue="0.96634036659352596" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="createGroup:" destination="NgC-C0-B9w" eventType="touchUpInside" id="G93-hV-gDz"/>
@@ -231,14 +233,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKU-Lk-b9s">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.90588241815567017" green="0.31372550129890442" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.88904955110497241" green="0.37929968635040989" blue="0.34731867044809828" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="g1q-HM-gC9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.93725496529999996" green="0.96862751250000001" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.93725490196078431" green="1" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="8m8-WY-10h" kind="push" id="uMj-zA-vAq"/>
@@ -324,51 +326,142 @@
             <point key="canvasLocation" x="797" y="706"/>
         </scene>
         <!--OrderVC-->
-        <scene sceneID="cLC-V7-T3M">
+        <scene sceneID="ODx-Bd-KjY">
             <objects>
-                <viewController storyboardIdentifier="orderVC" id="RFj-D1-q6O" customClass="orderVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="orderVC" id="yjt-Rx-dum" customClass="orderVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xcy-HR-Okv"/>
-                        <viewControllerLayoutGuide type="bottom" id="O3q-TP-Tf4"/>
+                        <viewControllerLayoutGuide type="top" id="JdY-cY-Qa2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mpg-MI-Mcb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Odb-vl-FfK">
+                    <view key="view" contentMode="scaleToFill" id="rZl-0B-sKc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to start a coffee run?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POi-3N-s7h">
-                                <rect key="frame" x="37" y="28" width="246" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHB-n4-zkl">
+                                <rect key="frame" x="60" y="329" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.75294117647058822" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="LQw-2U-60T"/>
+                                    <constraint firstAttribute="height" constant="44" id="1dN-HZ-dUL"/>
+                                    <constraint firstAttribute="width" constant="200" id="Djk-Wi-vFy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="18"/>
-                                <color key="textColor" red="0.40000003576278687" green="0.45098042488098145" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEs-4v-eHd">
-                                <rect key="frame" x="114" y="61" width="92" height="30"/>
-                                <color key="backgroundColor" red="0.20392158627510071" green="0.59607845544815063" blue="0.85882359743118286" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                <state key="normal" title="Start Run">
-                                    <color key="titleColor" red="0.99014399710974144" green="0.99872444168798435" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="20"/>
+                                <state key="normal" title="Place an Order">
+                                    <color key="titleColor" red="0.97057779964252444" green="1" blue="0.98532248436044045" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97057779960000001" green="1" blue="0.98532248440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w7C-TO-DSk" kind="push" id="xBl-hr-QNA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-jN-3Ae">
+                                <rect key="frame" x="60" y="192" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5Re-gB-5Go"/>
+                                    <constraint firstAttribute="width" constant="200" id="XSO-xc-kQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="20"/>
+                                <state key="normal" title="Start a Run">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Bei-vc-aMN" kind="push" id="VU3-q1-kwY"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGr-Sz-AEf">
+                                <rect key="frame" x="148" y="273" width="25" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="OKb-Ug-99w"/>
+                                    <constraint firstAttribute="height" constant="21" id="bnS-4F-R8i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="16"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.37647058823529411" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzh-Br-bAa">
+                                <rect key="frame" x="140" y="264" width="40" height="1"/>
+                                <color key="backgroundColor" red="0.62745100259999997" green="0.63529413940000001" blue="0.63137257099999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="E1x-rv-uH9"/>
+                                    <constraint firstAttribute="height" constant="1" id="TSe-9G-a1b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b14-7Z-PNG">
+                                <rect key="frame" x="140" y="302" width="40" height="1"/>
+                                <color key="backgroundColor" red="0.62745100259999997" green="0.63529413940000001" blue="0.63137257099999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="XV0-8h-okt"/>
+                                    <constraint firstAttribute="height" constant="1" id="aeG-J6-B4M"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GEs-4v-eHd" firstAttribute="leading" secondItem="Odb-vl-FfK" secondAttribute="leadingMargin" constant="98" id="AKh-8K-DBG"/>
-                            <constraint firstItem="POi-3N-s7h" firstAttribute="top" secondItem="Xcy-HR-Okv" secondAttribute="bottom" constant="8" symbolic="YES" id="B6A-aZ-OIQ"/>
-                            <constraint firstItem="POi-3N-s7h" firstAttribute="centerX" secondItem="Odb-vl-FfK" secondAttribute="centerX" id="DcG-Wq-ntM"/>
-                            <constraint firstItem="GEs-4v-eHd" firstAttribute="top" secondItem="POi-3N-s7h" secondAttribute="bottom" constant="8" symbolic="YES" id="bon-mB-5pg"/>
-                            <constraint firstItem="POi-3N-s7h" firstAttribute="leading" secondItem="Odb-vl-FfK" secondAttribute="leadingMargin" constant="21" id="cPd-kK-5WW"/>
-                            <constraint firstItem="O3q-TP-Tf4" firstAttribute="top" secondItem="GEs-4v-eHd" secondAttribute="bottom" constant="477" id="yht-Ds-w0d"/>
-                            <constraint firstItem="GEs-4v-eHd" firstAttribute="centerX" secondItem="POi-3N-s7h" secondAttribute="centerX" id="zfX-0Y-fG7"/>
+                            <constraint firstAttribute="centerX" secondItem="SJR-jN-3Ae" secondAttribute="centerX" id="0Af-nV-dbu"/>
+                            <constraint firstAttribute="centerX" secondItem="MGr-Sz-AEf" secondAttribute="centerX" id="339-hP-6eP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IHB-n4-zkl" secondAttribute="trailing" constant="44" id="CKQ-Rs-cAb"/>
+                            <constraint firstAttribute="centerY" secondItem="b14-7Z-PNG" secondAttribute="centerY" constant="-18.5" id="CL7-Fe-xcc"/>
+                            <constraint firstItem="Mpg-MI-Mcb" firstAttribute="top" secondItem="IHB-n4-zkl" secondAttribute="bottom" constant="195" id="Lew-bI-4hP"/>
+                            <constraint firstItem="SJR-jN-3Ae" firstAttribute="leading" secondItem="rZl-0B-sKc" secondAttribute="leadingMargin" constant="44" id="Np8-9h-RYu"/>
+                            <constraint firstAttribute="centerY" secondItem="Mzh-Br-bAa" secondAttribute="centerY" constant="19.5" id="XQ8-bK-CaY"/>
+                            <constraint firstAttribute="centerY" secondItem="MGr-Sz-AEf" secondAttribute="centerY" id="ccp-MN-ZgK"/>
+                            <constraint firstAttribute="centerY" secondItem="IHB-n4-zkl" secondAttribute="centerY" constant="-67" id="eW0-aU-FgN"/>
+                            <constraint firstAttribute="centerX" secondItem="IHB-n4-zkl" secondAttribute="centerX" id="gsq-x1-nKy"/>
+                            <constraint firstAttribute="centerX" secondItem="Mzh-Br-bAa" secondAttribute="centerX" id="iU4-vg-qme"/>
+                            <constraint firstItem="SJR-jN-3Ae" firstAttribute="top" secondItem="JdY-cY-Qa2" secondAttribute="bottom" constant="172" id="krV-fX-Twc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SJR-jN-3Ae" secondAttribute="trailing" constant="44" id="nJG-aG-uHp"/>
+                            <constraint firstAttribute="centerY" secondItem="SJR-jN-3Ae" secondAttribute="centerY" constant="70" id="pth-XU-boq"/>
+                            <constraint firstAttribute="centerX" secondItem="b14-7Z-PNG" secondAttribute="centerX" id="vhI-RW-jAK"/>
+                            <constraint firstItem="IHB-n4-zkl" firstAttribute="leading" secondItem="rZl-0B-sKc" secondAttribute="leadingMargin" constant="44" id="z1D-uW-WSJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Up2-en-Ahn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QLQ-Hd-xI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hlc-wr-axy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="713"/>
+            <point key="canvasLocation" x="1162" y="706"/>
+        </scene>
+        <!--Place OrderVC-->
+        <scene sceneID="9GV-18-Cc0">
+            <objects>
+                <viewController storyboardIdentifier="placeOrderVC" id="w7C-TO-DSk" customClass="placeOrderVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZFy-N6-zM5"/>
+                        <viewControllerLayoutGuide type="bottom" id="GfL-zi-meu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oYz-5a-25X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QFl-kq-xfi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ta-Bq-7lc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="1126"/>
+        </scene>
+        <!--Start RunVC-->
+        <scene sceneID="q7b-KB-bdx">
+            <objects>
+                <viewController storyboardIdentifier="startRunVC" id="Bei-vc-aMN" customClass="startRunVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xX8-85-jJ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mr1-aS-LcQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nYo-ah-AbM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bBk-Ku-bb3"/>
+                    <connections>
+                        <segue destination="yjt-Rx-dum" kind="push" identifier="cancelRun" id="ZBf-oW-zl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JR3-lC-Hqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="474"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="HNa-N0-ML5">
@@ -409,7 +502,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73g-XE-RJW">
                                 <rect key="frame" x="0.0" y="75" width="320" height="54"/>
-                                <color key="backgroundColor" red="0.27058824896812439" green="0.67843139171600342" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="pfk-jk-X28"/>
                                 </constraints>
@@ -417,7 +510,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="addFriendButton:" destination="2tS-Y0-eUP" eventType="touchUpInside" id="DHx-aI-dOs"/>
@@ -508,7 +601,7 @@
                                     <color key="titleShadowColor" red="0.40000003576278687" green="0.45098042488098145" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="" id="u2T-oU-JeM"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="" id="u2T-oU-JeM"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Nx-bI-QqC">
@@ -533,7 +626,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTc-DH-89v">
                                 <rect key="frame" x="35" y="334" width="250" height="48"/>
-                                <color key="backgroundColor" red="0.2941176593" green="0.70588237050000002" blue="0.42352944609999998" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="26"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -595,13 +688,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="csn-6N-fmv" secondAttribute="trailing" constant="12" id="zmC-SO-zoZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JRY-rg-Xs9"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="emailTxt" destination="csn-6N-fmv" id="XSD-bH-Wcp"/>
                         <outlet property="passwordTxt" destination="GBm-6v-9HY" id="Cyo-Xg-Z59"/>
                         <outlet property="signupBtn" destination="JTc-DH-89v" id="8KW-7g-whU"/>
                         <outlet property="usernameTxt" destination="0Nx-bI-QqC" id="Pyp-l8-0z0"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="showLoginVC" id="Eti-bN-pNa"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="showLoginVC" id="Eti-bN-pNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dL-Yg-etb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -663,7 +757,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Eti-bN-pNa"/>
+        <segue reference="u2T-oU-JeM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.40000003576278687" green="0.45098042488098145" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
 </document>
