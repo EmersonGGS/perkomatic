@@ -20,6 +20,10 @@ class runnerDashboardVC: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var ordersTable: UITableView!
     override func viewDidLoad() {
         
+        var nib = UINib(nibName: "orderItemCell", bundle: nil)
+        
+        ordersTable.registerNib(nib, forCellReuseIdentifier: "orderItem")
+        
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         
@@ -48,12 +52,12 @@ class runnerDashboardVC: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return 4;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell = self.ordersTable.dequeueReusableCellWithIdentifier("groupCell") as UITableViewCell
+        var cell: UITableViewCell = self.ordersTable.dequeueReusableCellWithIdentifier("orderItem") as UITableViewCell
         
         
         //alternate cell background colour

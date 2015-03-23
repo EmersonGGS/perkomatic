@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -751,17 +751,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running for " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-wr-9Uc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running for " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-wr-9Uc">
                                 <rect key="frame" x="0.0" y="28" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="8H8-bg-12d"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ioo-mB-UpQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ioo-mB-UpQ">
                                 <rect key="frame" x="0.0" y="70" width="320" height="449"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nla-72-EHO" id="jPF-TA-eBB"/>
+                                    <outlet property="delegate" destination="nla-72-EHO" id="SNI-0A-9AU"/>
+                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBD-mX-8KC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBD-mX-8KC">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.75294117650000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
@@ -773,15 +780,30 @@
                                     <action selector="navigateToSugarVC:" destination="nNK-nX-ifj" eventType="touchUpInside" id="ESt-9V-itC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-xk-yXA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-xk-yXA">
                                 <rect key="frame" x="12" y="525" width="48" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="0Z4-Qi-a54"/>
-                                    <constraint firstAttribute="width" constant="48" id="rfl-VX-2ed"/>
+                                    <constraint firstAttribute="height" constant="36" id="We0-PI-XfE"/>
+                                    <constraint firstAttribute="width" constant="48" id="rF8-mk-YhJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jft-xk-yXA" firstAttribute="top" secondItem="ioo-mB-UpQ" secondAttribute="bottom" constant="6" id="2LS-Bx-41o"/>
+                            <constraint firstItem="hgx-fT-eIH" firstAttribute="top" secondItem="Jft-xk-yXA" secondAttribute="bottom" constant="7" id="3Cn-q7-x3G"/>
+                            <constraint firstItem="vBD-mX-8KC" firstAttribute="bottom" secondItem="hgx-fT-eIH" secondAttribute="top" id="3r6-t9-iir"/>
+                            <constraint firstItem="Jft-xk-yXA" firstAttribute="centerY" secondItem="vBD-mX-8KC" secondAttribute="centerY" id="3zh-G4-TPj"/>
+                            <constraint firstAttribute="trailing" secondItem="ioo-mB-UpQ" secondAttribute="trailing" id="FZT-R5-9aE"/>
+                            <constraint firstItem="ioo-mB-UpQ" firstAttribute="top" secondItem="Cta-wr-9Uc" secondAttribute="bottom" constant="8" symbolic="YES" id="JIz-iT-z1i"/>
+                            <constraint firstItem="ioo-mB-UpQ" firstAttribute="leading" secondItem="vBD-mX-8KC" secondAttribute="leading" id="M7B-GP-Rot"/>
+                            <constraint firstItem="Cta-wr-9Uc" firstAttribute="top" secondItem="6ok-T2-zQG" secondAttribute="bottom" constant="8" symbolic="YES" id="bzM-Q5-0r2"/>
+                            <constraint firstItem="vBD-mX-8KC" firstAttribute="leading" secondItem="R6Q-uO-42i" secondAttribute="leading" id="kJT-XX-840"/>
+                            <constraint firstItem="Jft-xk-yXA" firstAttribute="leading" secondItem="R6Q-uO-42i" secondAttribute="leadingMargin" constant="-4" id="nGm-X2-C8W"/>
+                            <constraint firstItem="Cta-wr-9Uc" firstAttribute="leading" secondItem="ioo-mB-UpQ" secondAttribute="leading" id="xTi-x6-NhY"/>
+                            <constraint firstItem="ioo-mB-UpQ" firstAttribute="trailing" secondItem="vBD-mX-8KC" secondAttribute="trailing" id="yZF-bN-GqT"/>
+                            <constraint firstItem="ioo-mB-UpQ" firstAttribute="trailing" secondItem="Cta-wr-9Uc" secondAttribute="trailing" id="zgI-7i-e1S"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ordersTable" destination="ioo-mB-UpQ" id="9aO-sV-7TR"/>

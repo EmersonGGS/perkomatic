@@ -40,7 +40,7 @@ class sideBarTableView: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return 5
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -59,12 +59,16 @@ class sideBarTableView: UITableViewController {
         if (indexPath.row == 0) {
             cell!.textLabel?.text = "Home"
         }
-        
+            
         else if (indexPath.row == 1) {
-            cell!.textLabel?.text = "Groups"
+            cell!.textLabel?.text = "Dashboard"
         }
         
         else if (indexPath.row == 2) {
+            cell!.textLabel?.text = "Groups"
+        }
+        
+        else if (indexPath.row == 3) {
             cell!.textLabel?.text = "Friends"
         }
             
@@ -96,9 +100,12 @@ class sideBarTableView: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("dashboardVC") as UIViewController
             break
         case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("manageGroupVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("runnerDashboardVC") as UIViewController
             break
         case 2:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("manageGroupVC") as UIViewController
+            break
+        case 3:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("friendsVC") as UIViewController
             break
         default:
