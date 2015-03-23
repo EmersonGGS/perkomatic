@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,11 +24,23 @@
             <string>Raleway-Light</string>
             <string>Raleway-Light</string>
             <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
         </mutableArray>
         <mutableArray key="Raleway-Medium.ttf">
             <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
         </mutableArray>
         <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
             <string>Raleway-Regular</string>
@@ -419,10 +429,10 @@
             </objects>
             <point key="canvasLocation" x="1515" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--CreamerVC-->
         <scene sceneID="h7p-kn-t2h">
             <objects>
-                <viewController id="nNK-nX-ifj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="creamerVC" id="nNK-nX-ifj" customClass="creamerVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cNm-tj-2Jl"/>
                         <viewControllerLayoutGuide type="bottom" id="oVY-Dj-kPr"/>
@@ -431,149 +441,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ks5-QQ-9By">
-                                <rect key="frame" x="0.0" y="266" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.099950149119999998" green="0.73797368340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="None">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-Sc-zoO">
                                 <rect key="frame" x="0.0" y="209" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.099950149119999998" green="0.73797368340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6AS-uW-khu"/>
+                                    <constraint firstAttribute="height" constant="50" id="N4I-n2-4cd"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Non Dairy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="creamerSelected:" destination="nNK-nX-ifj" eventType="touchUpInside" id="8yE-P7-xnv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7y-1e-AGP">
                                 <rect key="frame" x="0.0" y="152" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.099950149119999998" green="0.73797368340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pm3-0f-ZW5"/>
+                                    <constraint firstAttribute="height" constant="50" id="DaL-ds-9Vq"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Milk">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="creamerSelected:" destination="nNK-nX-ifj" eventType="touchUpInside" id="k0A-7k-a00"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a creamer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQc-rA-DEm">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="yn2-9r-9Xe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
-                                <color key="textColor" red="0.25882352941176473" green="0.30196078431372547" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iXR-Po-9fE">
-                                <rect key="frame" x="113" y="404" width="94" height="29"/>
-                                <color key="tintColor" red="0.11764705882352941" green="0.67843137254901964" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="iXR-Po-9fE">
+                                <rect key="frame" x="113" y="373" width="94" height="29"/>
+                                <color key="tintColor" red="0.082504924936236068" green="0.51876648364992028" blue="0.76992394179894186" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="interateCreamer:" destination="nNK-nX-ifj" eventType="valueChanged" id="5Kg-wC-MCz"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bl-5w-gag">
                                 <rect key="frame" x="0.0" y="95" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.09995014911822997" green="0.73797368340840208" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="S4P-VR-Fzh"/>
+                                    <constraint firstAttribute="height" constant="50" id="iHO-Aa-R8p"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Cream">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="creamerSelected:" destination="nNK-nX-ifj" eventType="touchUpInside" id="a4s-hG-kcq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YS-82-ABQ">
-                                <rect key="frame" x="160" y="518" width="160" height="50"/>
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.396078431372549" green="0.75294117647058822" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-Ty-fxF">
-                                <rect key="frame" x="0.0" y="518" width="160" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.52230093888882534" blue="0.40907164325717182" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="50Y-3O-CEA"/>
-                                </constraints>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="navigateToSugarVC:" destination="nNK-nX-ifj" eventType="touchUpInside" id="VyI-Jt-Bzz"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="csw-wk-SWY">
                                 <rect key="frame" x="272" y="525" width="48" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="ew1-Wx-5Ok"/>
+                                    <constraint firstAttribute="width" constant="48" id="LeU-bd-MG4"/>
+                                    <constraint firstAttribute="height" constant="36" id="plf-j8-lik"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="MSQ-WR-Yab">
-                                <rect key="frame" x="0.0" y="525" width="48" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-xa-ZWm">
+                                <rect key="frame" x="140" y="318" width="41" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="OWs-UA-1xn"/>
-                                    <constraint firstAttribute="height" constant="36" id="YVi-Pd-cyE"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-xa-ZWm">
-                                <rect key="frame" x="148" y="359" width="25" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="iEh-Hb-1V2"/>
-                                    <constraint firstAttribute="height" constant="28" id="vd9-yg-EBb"/>
+                                    <constraint firstAttribute="width" constant="41" id="bYY-GT-xFY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="32"/>
                                 <color key="textColor" red="0.32549019607843138" green="0.37647058823529411" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a creamer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQc-rA-DEm">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8hD-gV-keN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <color key="textColor" red="0.25882352941176473" green="0.30196078431372547" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b7y-1e-AGP" firstAttribute="trailing" secondItem="4bl-5w-gag" secondAttribute="trailing" id="0iY-qK-cWk"/>
-                            <constraint firstItem="b7y-1e-AGP" firstAttribute="leading" secondItem="4bl-5w-gag" secondAttribute="leading" id="1HA-2u-foI"/>
-                            <constraint firstItem="W2L-Ty-fxF" firstAttribute="baseline" secondItem="4YS-82-ABQ" secondAttribute="firstBaseline" id="4AD-Dh-MGy"/>
-                            <constraint firstItem="aQc-rA-DEm" firstAttribute="top" secondItem="cNm-tj-2Jl" secondAttribute="bottom" constant="8" symbolic="YES" id="5WT-Us-K0J"/>
-                            <constraint firstItem="4YS-82-ABQ" firstAttribute="baseline" secondItem="W2L-Ty-fxF" secondAttribute="firstBaseline" id="5ik-QL-Zbb"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="height" secondItem="4bl-5w-gag" secondAttribute="height" id="9YY-Ap-rhd"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="width" secondItem="b7y-1e-AGP" secondAttribute="width" id="Ax8-w7-Iuz"/>
-                            <constraint firstItem="b7y-1e-AGP" firstAttribute="top" secondItem="4bl-5w-gag" secondAttribute="bottom" constant="7" id="EQE-uO-xH7"/>
-                            <constraint firstItem="MSQ-WR-Yab" firstAttribute="leading" secondItem="Ks5-QQ-9By" secondAttribute="leading" id="Gdr-LM-Wpt"/>
-                            <constraint firstItem="csw-wk-SWY" firstAttribute="top" secondItem="MSQ-WR-Yab" secondAttribute="top" id="JCk-PO-fU7"/>
-                            <constraint firstItem="vvs-xa-ZWm" firstAttribute="centerX" secondItem="iXR-Po-9fE" secondAttribute="centerX" id="JFC-Yo-rQV"/>
-                            <constraint firstItem="4YS-82-ABQ" firstAttribute="trailing" secondItem="csw-wk-SWY" secondAttribute="trailing" id="Ju3-6e-iSC"/>
-                            <constraint firstItem="4YS-82-ABQ" firstAttribute="leading" secondItem="W2L-Ty-fxF" secondAttribute="trailing" id="LB8-28-wjN"/>
-                            <constraint firstItem="W2L-Ty-fxF" firstAttribute="bottom" secondItem="oVY-Dj-kPr" secondAttribute="top" id="MCx-n1-5SI"/>
-                            <constraint firstItem="W2L-Ty-fxF" firstAttribute="centerY" secondItem="MSQ-WR-Yab" secondAttribute="centerY" id="NLa-oR-r4U"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="leading" secondItem="b7y-1e-AGP" secondAttribute="leading" id="QDU-8M-AOa"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="height" secondItem="b7y-1e-AGP" secondAttribute="height" id="RK3-rJ-zZz"/>
-                            <constraint firstItem="vvs-xa-ZWm" firstAttribute="centerX" secondItem="Ks5-QQ-9By" secondAttribute="centerX" id="RNX-cN-Kk6"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="top" secondItem="b7y-1e-AGP" secondAttribute="bottom" constant="7" id="W73-A6-EGF"/>
-                            <constraint firstItem="csw-wk-SWY" firstAttribute="bottom" secondItem="MSQ-WR-Yab" secondAttribute="bottom" id="ZWA-Mw-uxc"/>
-                            <constraint firstItem="Ks5-QQ-9By" firstAttribute="trailing" secondItem="csw-wk-SWY" secondAttribute="trailing" id="ag1-0K-Hwh"/>
-                            <constraint firstItem="vvs-xa-ZWm" firstAttribute="top" secondItem="Ks5-QQ-9By" secondAttribute="bottom" constant="43" id="efF-F9-3fC"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="width" secondItem="4bl-5w-gag" secondAttribute="width" id="el2-9x-F0o"/>
-                            <constraint firstItem="aQc-rA-DEm" firstAttribute="leading" secondItem="4bl-5w-gag" secondAttribute="leading" id="fjV-aX-Sqj"/>
-                            <constraint firstItem="b7y-1e-AGP" firstAttribute="trailing" secondItem="7rW-Sc-zoO" secondAttribute="trailing" id="hBN-sB-th1"/>
-                            <constraint firstItem="4bl-5w-gag" firstAttribute="trailing" secondItem="aQc-rA-DEm" secondAttribute="trailing" id="i25-rq-KtA"/>
-                            <constraint firstItem="Ks5-QQ-9By" firstAttribute="top" secondItem="7rW-Sc-zoO" secondAttribute="bottom" constant="7" id="jxa-Qr-7Dq"/>
-                            <constraint firstItem="oVY-Dj-kPr" firstAttribute="top" secondItem="MSQ-WR-Yab" secondAttribute="bottom" constant="7" id="kiF-Xi-VTh"/>
-                            <constraint firstItem="Ks5-QQ-9By" firstAttribute="leading" secondItem="7rW-Sc-zoO" secondAttribute="leading" id="lSF-yF-DgG"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="height" secondItem="Ks5-QQ-9By" secondAttribute="height" id="o00-i4-JXc"/>
-                            <constraint firstItem="iXR-Po-9fE" firstAttribute="top" secondItem="vvs-xa-ZWm" secondAttribute="bottom" constant="17" id="pMN-ZE-mKt"/>
-                            <constraint firstItem="W2L-Ty-fxF" firstAttribute="top" secondItem="4YS-82-ABQ" secondAttribute="top" id="qXC-lW-5lE"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="width" secondItem="Ks5-QQ-9By" secondAttribute="width" id="sQB-zQ-qSN"/>
-                            <constraint firstItem="4YS-82-ABQ" firstAttribute="width" secondItem="W2L-Ty-fxF" secondAttribute="width" id="sxB-Gq-oOK"/>
-                            <constraint firstItem="MSQ-WR-Yab" firstAttribute="leading" secondItem="W2L-Ty-fxF" secondAttribute="leading" id="tyK-d7-pEv"/>
-                            <constraint firstAttribute="trailing" secondItem="Ks5-QQ-9By" secondAttribute="trailing" id="v4D-lp-zSa"/>
-                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="trailing" secondItem="Ks5-QQ-9By" secondAttribute="trailing" id="y8e-Ad-bMU"/>
-                            <constraint firstItem="4bl-5w-gag" firstAttribute="top" secondItem="aQc-rA-DEm" secondAttribute="bottom" constant="23" id="ybC-E3-4g0"/>
-                            <constraint firstItem="4bl-5w-gag" firstAttribute="leading" secondItem="5og-Nl-ChE" secondAttribute="leading" id="yeg-vj-mLJ"/>
+                            <constraint firstItem="4YS-82-ABQ" firstAttribute="bottom" secondItem="oVY-Dj-kPr" secondAttribute="top" id="5Vj-Pq-VcV"/>
+                            <constraint firstItem="4YS-82-ABQ" firstAttribute="centerY" secondItem="csw-wk-SWY" secondAttribute="centerY" id="6en-ZO-YEn"/>
+                            <constraint firstItem="iXR-Po-9fE" firstAttribute="top" secondItem="vvs-xa-ZWm" secondAttribute="bottom" constant="17" id="6ha-JF-dFS"/>
+                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="top" secondItem="b7y-1e-AGP" secondAttribute="bottom" constant="7" id="9h4-iq-cD5"/>
+                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="centerX" secondItem="vvs-xa-ZWm" secondAttribute="centerX" id="Bel-np-BCB"/>
+                            <constraint firstItem="b7y-1e-AGP" firstAttribute="leading" secondItem="5og-Nl-ChE" secondAttribute="leading" id="JbT-nC-TcM"/>
+                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="trailing" secondItem="csw-wk-SWY" secondAttribute="trailing" id="MYG-BI-FV6"/>
+                            <constraint firstItem="4bl-5w-gag" firstAttribute="trailing" secondItem="b7y-1e-AGP" secondAttribute="trailing" id="NC7-vS-RDE"/>
+                            <constraint firstItem="4bl-5w-gag" firstAttribute="top" secondItem="aQc-rA-DEm" secondAttribute="bottom" constant="23" id="WrH-GJ-5UU"/>
+                            <constraint firstAttribute="trailing" secondItem="csw-wk-SWY" secondAttribute="trailing" id="YxL-wG-LYr"/>
+                            <constraint firstItem="iXR-Po-9fE" firstAttribute="centerX" secondItem="vvs-xa-ZWm" secondAttribute="centerX" id="aZ7-2j-X3g"/>
+                            <constraint firstItem="csw-wk-SWY" firstAttribute="trailing" secondItem="4YS-82-ABQ" secondAttribute="trailing" id="dLp-kA-lAp"/>
+                            <constraint firstItem="4bl-5w-gag" firstAttribute="leading" secondItem="b7y-1e-AGP" secondAttribute="leading" id="eNR-FR-J3N"/>
+                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="leading" secondItem="4YS-82-ABQ" secondAttribute="leading" id="jYt-dM-tys"/>
+                            <constraint firstItem="7rW-Sc-zoO" firstAttribute="leading" secondItem="b7y-1e-AGP" secondAttribute="leading" id="lGV-ri-hOQ"/>
+                            <constraint firstItem="b7y-1e-AGP" firstAttribute="top" secondItem="4bl-5w-gag" secondAttribute="bottom" constant="7" id="li1-bc-sZj"/>
+                            <constraint firstItem="vvs-xa-ZWm" firstAttribute="top" secondItem="7rW-Sc-zoO" secondAttribute="bottom" constant="59" id="mMb-KO-TXr"/>
+                            <constraint firstItem="b7y-1e-AGP" firstAttribute="trailing" secondItem="7rW-Sc-zoO" secondAttribute="trailing" id="rjE-ut-hdc"/>
+                            <constraint firstItem="aQc-rA-DEm" firstAttribute="top" secondItem="cNm-tj-2Jl" secondAttribute="bottom" constant="8" symbolic="YES" id="rv1-vT-mJl"/>
+                            <constraint firstItem="oVY-Dj-kPr" firstAttribute="top" secondItem="csw-wk-SWY" secondAttribute="bottom" constant="7" id="tb4-CU-983"/>
+                            <constraint firstItem="aQc-rA-DEm" firstAttribute="trailing" secondItem="4bl-5w-gag" secondAttribute="trailing" id="uyq-tl-HL1"/>
+                            <constraint firstItem="aQc-rA-DEm" firstAttribute="leading" secondItem="4bl-5w-gag" secondAttribute="leading" id="wPU-Y7-pTD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cch-6a-7lv"/>
                     <connections>
+                        <outlet property="creamBtn" destination="4bl-5w-gag" id="AAU-Sm-LO0"/>
+                        <outlet property="creamerAmountLabel" destination="vvs-xa-ZWm" id="OJW-5I-baR"/>
+                        <outlet property="milkBtn" destination="b7y-1e-AGP" id="v85-rx-9kH"/>
+                        <outlet property="nondairyBtn" destination="7rW-Sc-zoO" id="S5k-jm-hnI"/>
                         <segue destination="w7C-TO-DSk" kind="push" identifier="toMenuFromCreamer" id="qCn-Ni-0be"/>
+                        <segue destination="mNg-TN-7VH" kind="push" identifier="moveToSugar" id="JKR-su-Xje"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAP-3G-QkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -619,10 +610,10 @@
             </objects>
             <point key="canvasLocation" x="1520" y="37"/>
         </scene>
-        <!--View Controller-->
+        <!--SugarVC-->
         <scene sceneID="kF5-JN-zaU">
             <objects>
-                <viewController id="mNg-TN-7VH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sugarVC" id="mNg-TN-7VH" customClass="sugarVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hy4-ty-5Oh"/>
                         <viewControllerLayoutGuide type="bottom" id="7Fq-Mh-XYR"/>
@@ -630,12 +621,175 @@
                     <view key="view" contentMode="scaleToFill" id="fEL-im-SuW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a sugar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9q-Eh-CyU">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bdk-UD-D6h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <color key="textColor" red="0.21176470588235294" green="0.25098039215686274" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-Vy-p0I">
+                                <rect key="frame" x="0.0" y="240" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.099950149119999998" green="0.73797368340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Sweetener">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectSugarType:" destination="mNg-TN-7VH" eventType="touchUpInside" id="if3-Am-kGx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHQ-Bf-OfQ">
+                                <rect key="frame" x="143" y="211" width="34" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="6rO-Fg-584"/>
+                                    <constraint firstAttribute="height" constant="21" id="Eej-En-qfn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <color key="textColor" red="0.25882352941176473" green="0.30196078431372547" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q69-kt-MjJ">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.75294117650000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitOrder:" destination="mNg-TN-7VH" eventType="touchUpInside" id="YZb-D2-ERY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="khc-o1-2cD">
+                                <rect key="frame" x="16" y="525" width="48" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FSV-xZ-A7W"/>
+                                    <constraint firstAttribute="width" constant="48" id="bBI-CC-fS9"/>
+                                </constraints>
+                            </imageView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="BB3-O3-OwN">
+                                <rect key="frame" x="113" y="394" width="94" height="29"/>
+                                <color key="tintColor" red="0.082504924940000002" green="0.51876648359999999" blue="0.76992394180000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeSugarValue:" destination="mNg-TN-7VH" eventType="valueChanged" id="qre-gd-Op3"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sus-6S-bJy">
+                                <rect key="frame" x="140" y="339" width="41" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="0kK-SI-u94"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="32"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.37647058820000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="986-sK-m1c">
+                                <rect key="frame" x="0.0" y="153" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.099950149119999998" green="0.73797368340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Sugar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectSugarType:" destination="mNg-TN-7VH" eventType="touchUpInside" id="GJT-yh-z5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q69-kt-MjJ" firstAttribute="bottom" secondItem="7Fq-Mh-XYR" secondAttribute="top" id="1ru-Ei-9Ga"/>
+                            <constraint firstItem="d9q-Eh-CyU" firstAttribute="leading" secondItem="fEL-im-SuW" secondAttribute="leading" id="3mg-lh-1bZ"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="top" secondItem="SHQ-Bf-OfQ" secondAttribute="bottom" constant="8" id="4Sm-gf-Zdy"/>
+                            <constraint firstItem="986-sK-m1c" firstAttribute="trailing" secondItem="kRd-Vy-p0I" secondAttribute="trailing" id="4fY-fO-1oX"/>
+                            <constraint firstItem="BB3-O3-OwN" firstAttribute="top" secondItem="Sus-6S-bJy" secondAttribute="bottom" constant="17" id="7u9-lv-f6h"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="width" secondItem="986-sK-m1c" secondAttribute="width" id="8TR-6J-dFk"/>
+                            <constraint firstItem="d9q-Eh-CyU" firstAttribute="top" secondItem="hy4-ty-5Oh" secondAttribute="bottom" constant="8" symbolic="YES" id="94s-Ns-HLJ"/>
+                            <constraint firstItem="khc-o1-2cD" firstAttribute="leading" secondItem="fEL-im-SuW" secondAttribute="leadingMargin" id="9tJ-oN-Fge"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="height" secondItem="986-sK-m1c" secondAttribute="height" id="AvH-mI-bmr"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="centerY" secondItem="fEL-im-SuW" secondAttribute="centerY" constant="-19" id="CVs-Ar-eDW"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="centerX" secondItem="Sus-6S-bJy" secondAttribute="centerX" id="ENm-dD-G4Q"/>
+                            <constraint firstItem="BB3-O3-OwN" firstAttribute="centerX" secondItem="Sus-6S-bJy" secondAttribute="centerX" id="EdW-Su-K0F"/>
+                            <constraint firstItem="7Fq-Mh-XYR" firstAttribute="top" secondItem="khc-o1-2cD" secondAttribute="bottom" constant="7" id="NOY-CU-Keu"/>
+                            <constraint firstItem="Q69-kt-MjJ" firstAttribute="leading" secondItem="kRd-Vy-p0I" secondAttribute="leading" id="NOf-F4-tsh"/>
+                            <constraint firstItem="986-sK-m1c" firstAttribute="leading" secondItem="kRd-Vy-p0I" secondAttribute="leading" id="O5R-TF-9wx"/>
+                            <constraint firstItem="Q69-kt-MjJ" firstAttribute="top" secondItem="BB3-O3-OwN" secondAttribute="bottom" constant="95" id="Pbq-ZK-0to"/>
+                            <constraint firstItem="SHQ-Bf-OfQ" firstAttribute="centerX" secondItem="986-sK-m1c" secondAttribute="centerX" id="QMf-dn-Vk8"/>
+                            <constraint firstItem="Q69-kt-MjJ" firstAttribute="centerY" secondItem="khc-o1-2cD" secondAttribute="centerY" id="Qhv-wc-Q8D"/>
+                            <constraint firstItem="d9q-Eh-CyU" firstAttribute="leading" secondItem="986-sK-m1c" secondAttribute="leading" id="cbY-Zh-yKF"/>
+                            <constraint firstItem="Sus-6S-bJy" firstAttribute="top" secondItem="kRd-Vy-p0I" secondAttribute="bottom" constant="49" id="hwq-RF-g2A"/>
+                            <constraint firstItem="986-sK-m1c" firstAttribute="trailing" secondItem="d9q-Eh-CyU" secondAttribute="trailing" id="kag-PA-r9u"/>
+                            <constraint firstAttribute="trailing" secondItem="kRd-Vy-p0I" secondAttribute="trailing" id="miX-jU-7PW"/>
+                            <constraint firstItem="986-sK-m1c" firstAttribute="top" secondItem="d9q-Eh-CyU" secondAttribute="bottom" constant="81" id="o1H-YT-LM5"/>
+                            <constraint firstItem="kRd-Vy-p0I" firstAttribute="trailing" secondItem="Q69-kt-MjJ" secondAttribute="trailing" id="sqo-3N-yRh"/>
+                            <constraint firstItem="SHQ-Bf-OfQ" firstAttribute="top" secondItem="986-sK-m1c" secondAttribute="bottom" constant="8" id="vDo-eu-raa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gzY-rV-nML"/>
+                    <connections>
+                        <outlet property="sugarIteration" destination="Sus-6S-bJy" id="6bV-oe-2DB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRR-yr-MiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2281" y="731"/>
+        </scene>
+        <!--Runner DashboardVC-->
+        <scene sceneID="7HQ-E8-q2j">
+            <objects>
+                <viewController storyboardIdentifier="runnerDashboardVC" id="nla-72-EHO" customClass="runnerDashboardVC" customModule="perkomatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ok-T2-zQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgx-fT-eIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R6Q-uO-42i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running for " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-wr-9Uc">
+                                <rect key="frame" x="0.0" y="28" width="320" height="34"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ioo-mB-UpQ">
+                                <rect key="frame" x="0.0" y="70" width="320" height="449"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBD-mX-8KC">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.75294117650000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="22"/>
+                                <state key="normal" title="RUN COMPLETE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToSugarVC:" destination="nNK-nX-ifj" eventType="touchUpInside" id="ESt-9V-itC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-xk-yXA">
+                                <rect key="frame" x="12" y="525" width="48" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0Z4-Qi-a54"/>
+                                    <constraint firstAttribute="width" constant="48" id="rfl-VX-2ed"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ordersTable" destination="ioo-mB-UpQ" id="9aO-sV-7TR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5w-eY-AnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="1390"/>
         </scene>
         <!--Home-->
         <scene sceneID="HNa-N0-ML5">
@@ -1004,7 +1158,7 @@
     </scenes>
     <resources>
         <image name="addFriend.png" width="120" height="120"/>
-        <image name="leftArrow.png" width="512" height="512"/>
+        <image name="checkMark.png" width="512" height="512"/>
         <image name="newAdd.png" width="475" height="472"/>
         <image name="rightArrow.png" width="512" height="512"/>
     </resources>

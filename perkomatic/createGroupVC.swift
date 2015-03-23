@@ -36,16 +36,6 @@ class createGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         self.title = "Friends"
         
-        //Adding navigation button to nav bar
-        let menuButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        menuButton.frame = CGRectMake(0, 0, 30, 30)
-        menuButton.setImage(UIImage(named:"menuIcon.png"), forState: UIControlState.Normal)
-        menuButton.addTarget(self, action: "toggleNavMenu:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        var leftBarButtonItem: UIBarButtonItem = UIBarButtonItem(customView: menuButton)
-        
-        self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
-        
         //define current user
         var currentUser = PFUser.currentUser()
         
