@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -26,7 +25,7 @@
                         <rect key="frame" x="224" y="0.0" width="96" height="60"/>
                         <color key="backgroundColor" red="0.20392158627510071" green="0.59607845544815063" blue="0.85882359743118286" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="96" id="dNi-fz-7qd"/>
+                            <constraint firstAttribute="width" constant="96" id="Y5I-Rs-JzD"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
                         <color key="textColor" red="0.92549026012420654" green="0.94117653369903564" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
@@ -35,27 +34,27 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rh-vS-fgK">
                         <rect key="frame" x="56" y="6" width="140" height="48"/>
                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atv-Ih-yyk">
                         <rect key="frame" x="8" y="16" width="28" height="28"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="28" id="l9P-dB-qMA"/>
+                            <constraint firstAttribute="width" constant="28" id="rmZ-bO-540"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="d7k-52-DT0" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="top" id="2jC-1j-Sr4"/>
-                    <constraint firstItem="atv-Ih-yyk" firstAttribute="leading" secondItem="euA-bn-NIg" secondAttribute="leadingMargin" id="5qx-8c-EK0"/>
-                    <constraint firstItem="atv-Ih-yyk" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="8" id="C8x-LH-mvC"/>
-                    <constraint firstItem="d7k-52-DT0" firstAttribute="leading" secondItem="3Rh-vS-fgK" secondAttribute="trailing" constant="28" id="ETU-fY-51X"/>
-                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="centerY" secondItem="atv-Ih-yyk" secondAttribute="centerY" id="Ic7-4y-snk"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="3Rh-vS-fgK" secondAttribute="bottom" constant="-3" id="TBA-gP-EUW"/>
-                    <constraint firstAttribute="trailing" secondItem="d7k-52-DT0" secondAttribute="trailing" id="YKV-Jg-bgW"/>
-                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="leading" secondItem="atv-Ih-yyk" secondAttribute="trailing" constant="20" id="c8c-ge-dV8"/>
-                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="centerY" secondItem="d7k-52-DT0" secondAttribute="centerY" id="kHP-IA-yMe"/>
-                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="-2" id="rHd-Gl-rZf"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="leading" secondItem="atv-Ih-yyk" secondAttribute="trailing" constant="20" id="Bt3-oM-TxQ"/>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="top" id="Rmo-Tq-382"/>
+                    <constraint firstAttribute="trailing" secondItem="d7k-52-DT0" secondAttribute="trailing" id="Rvx-3P-2mh"/>
+                    <constraint firstItem="atv-Ih-yyk" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="8" id="TvA-Eq-okE"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="top" secondItem="euA-bn-NIg" secondAttribute="topMargin" constant="-2" id="VjS-GB-V15"/>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="centerY" secondItem="3Rh-vS-fgK" secondAttribute="centerY" id="cou-q1-bCH"/>
+                    <constraint firstItem="atv-Ih-yyk" firstAttribute="leading" secondItem="euA-bn-NIg" secondAttribute="leadingMargin" id="mA1-E3-kIq"/>
+                    <constraint firstItem="d7k-52-DT0" firstAttribute="leading" secondItem="3Rh-vS-fgK" secondAttribute="trailing" constant="28" id="ohU-Nf-XBT"/>
+                    <constraint firstItem="3Rh-vS-fgK" firstAttribute="centerY" secondItem="atv-Ih-yyk" secondAttribute="centerY" id="y8C-iS-Exc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3Rh-vS-fgK" secondAttribute="bottom" constant="-3" id="yTC-bV-kLL"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

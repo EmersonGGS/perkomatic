@@ -112,8 +112,10 @@ class notificationsVC: UIViewController {
         
         if String(self.notiTypeArray[indexPath.row] as NSString) == "Friend Request"{
             cell.loadItem(nameText, type: typeText, typeBG: UIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0) , image: "friendProfile.png")
-        } else {
+        } else if String(self.notiTypeArray[indexPath.row] as NSString) == "Group Invite"{
             cell.loadItem(nameText, type: typeText, typeBG: UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1.0) , image: "groupIcon.png")
+        } else{
+            cell.loadItem(nameText, type: typeText, typeBG: UIColor(red: 26/255.0, green: 188/255.0, blue: 156/255.0, alpha: 1.0) , image: "onARun.png")
         }
         
         

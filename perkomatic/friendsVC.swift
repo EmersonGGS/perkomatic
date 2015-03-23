@@ -153,11 +153,6 @@ class friendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                                                                 // There was a problem, check error.description
                                                             }
                                                         }
-                                                        let addedAlert = UIAlertController(title: "Added", message:
-                                                            "Congrats on your new buddy!", preferredStyle: UIAlertControllerStyle.Alert)
-                                                        addedAlert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default,handler: nil))
-                                                        
-                                                        self.presentViewController(addedAlert, animated: true, completion: nil)
                                                         self.addFriendText.text = ""
                                                     } else {
                                                         // There was a problem, check error.description

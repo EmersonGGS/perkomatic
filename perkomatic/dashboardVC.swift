@@ -16,7 +16,7 @@ class dashboardVC: UIViewController {
         //define background color of view
         self.view.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         
-        self.title = "Dashboard"
+        self.title = "Home"
         
         //Adding navigation button to nav bar
         let menuButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton

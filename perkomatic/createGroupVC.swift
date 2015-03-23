@@ -258,6 +258,7 @@ class createGroupVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         createGroup["Members"] = self.addedMembers
         createGroup["Admin"] = currentUser.username
         createGroup["Name"] = groupName.text
+        createGroup["Active"] = "false"
         createGroup.saveInBackgroundWithBlock {
             (success: Bool, error: NSError!) -> Void in
             if (success) {

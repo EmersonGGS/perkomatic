@@ -10,10 +10,11 @@ import UIKit
 
 class startRunVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var startRunTable: UITableView!
     var groupsArray : [String] = []
     var groupSelection: [String] = []
     
-    var startRunTable: UITableView  =   UITableView()
+    var groupRunName = ""
     
     var acceptBtn = UIButton()
     var declineBtn = UIButton()
@@ -23,16 +24,9 @@ class startRunVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         var viewWidth = self.view.frame.width
         var viewHeight = self.view.frame.height
         
-        
-        self.startRunTable.frame = CGRectMake(0, 60, viewWidth, (viewHeight-60));
-        self.startRunTable.delegate = self
-        self.startRunTable.dataSource = self
-        
         var nib = UINib(nibName: "notificationTableCell", bundle: nil)
         
         self.startRunTable.registerNib(nib, forCellReuseIdentifier: "groupRunCell")
-        
-        self.view.addSubview(self.startRunTable)
         
         super.viewDidLoad()
         
@@ -121,13 +115,72 @@ class startRunVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func createRun(sender:UIButton!) {
         
+        //init current user variable
+        var currentUser = PFUser.currentUser()
+        
+        var notificationsArray : AnyObject = []
+        
+        //query for the users/friends within the selected group
+        var getGroupMemebers = PFQuery(className:"Groups")
+        getGroupMemebers.whereKey("Name", equalTo:self.groupRunName)
+        getGroupMemebers.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                println("Successfully retrieved \(objects.count) scores.")
+                // Do something with the found objects
+                if let objects = objects as? [PFObject] {
+                    for object in objects {
+                        object["Active"] = "true"
+                        object["CurrentRunner"] = currentUser.username
+                        object.saveInBackgroundWithBlock {
+                            (success: Bool, error: NSError!) -> Void in
+                            if (success) {
+                                // The object has been saved.
+                            } else {
+                                // There was a problem, check error.description
+                            }
+                        }
+                        
+                        //Taking each member item and appending them into a local array
+                        notificationsArray = object["Members"]
+                        var tempNoti : [String] = []
+                        for(var i = 0; i < notificationsArray.count; i++){
+                            if( currentUser.username != notificationsArray[i] as String){
+                                tempNoti.append(notificationsArray[i] as String)
+                            }
+                            println(tempNoti)
+                        }
+                        notificationsArray = tempNoti
+                        println(notificationsArray)
+                        for (var i = 0; i < notificationsArray.count; i++){
+                            var notification = PFObject(className:"Notifications")
+                            notification["To"] = notificationsArray[i]
+                            notification["From"] = self.groupRunName
+                            notification["Type"] = "Run Started"
+                            notification.saveInBackgroundWithBlock {
+                                (success: Bool, error: NSError!) -> Void in
+                                if (success) {
+                                    // The object has been saved.
+                                } else {
+                                    // There was a problem, check error.description
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    // Log details of the failure
+                    println("Error: \(error) \(error.userInfo!)")
+                }
+            }
+            
+        }
+        
     }
     
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println(self.groupsArray)
-        println(self.groupsArray.count)
         
         return self.groupsArray.count;
         
@@ -135,21 +188,18 @@ class startRunVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let SelectedCellHeight: CGFloat = 60.0
-        let UnselectedCellHeight: CGFloat = 60.0
-        
         var cell: notificationTableCell = self.startRunTable.dequeueReusableCellWithIdentifier("groupRunCell") as notificationTableCell
         
         var stringText = String(self.groupsArray[indexPath.row] as NSString)
         println(self.groupsArray)
         
         if(self.groupSelection[indexPath.row] == "Selected"){
-             cell.loadItem(stringText, type: self.groupSelection[indexPath.row], typeBG: UIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0) , image: "groupIcon.png")
+            cell.loadItem(stringText, type: self.groupSelection[indexPath.row], typeBG: UIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0) , image: "groupIcon.png")
         }else{
-             cell.loadItem(stringText, type: self.groupSelection[indexPath.row], typeBG: UIColor(red: 162/255.0, green: 162/255.0, blue: 162/255.0, alpha: 1.0) , image: "groupIcon.png")
+            cell.loadItem(stringText, type: self.groupSelection[indexPath.row], typeBG: UIColor(red: 162/255.0, green: 162/255.0, blue: 162/255.0, alpha: 1.0) , image: "groupIcon.png")
         }
         
-       
+        
         
         //alternate cell background colour
         if ( indexPath.row % 2 == 0 ){
@@ -175,6 +225,9 @@ class startRunVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         self.groupSelection[indexPath!.row] = "Selected"
         
+        self.groupRunName = self.groupsArray[indexPath!.row]
+        
+        println(self.groupRunName)
         
         self.startRunTable.reloadData()
         

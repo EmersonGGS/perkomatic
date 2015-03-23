@@ -26,8 +26,14 @@
 		63A401191A984FA40038569D /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A401171A984FA40038569D /* ENSideMenuNavigationController.swift */; };
 		63A4011B1A9851C40038569D /* sideBarNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4011A1A9851C40038569D /* sideBarNavController.swift */; };
 		63A4011D1A98523D0038569D /* sideBarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4011C1A98523D0038569D /* sideBarTableView.swift */; };
-		63A467BF1AB4B37B00C6EEF6 /* orderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A467BE1AB4B37B00C6EEF6 /* orderVC.swift */; };
 		63A467C31AB4D26100C6EEF6 /* startRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A467C21AB4D26100C6EEF6 /* startRunVC.swift */; };
+		63B215F11ABCBC150011F6D4 /* onARun.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B215F01ABCBC150011F6D4 /* onARun.png */; };
+		63B215F51ABCF4750011F6D4 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B215F41ABCF4750011F6D4 /* MenuItemCell.xib */; };
+		63B215F71ABCF5EE0011F6D4 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B215F61ABCF5EE0011F6D4 /* MenuItemCell.swift */; };
+		63D92F681ABFC63B00430FE7 /* menuItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D92F671ABFC63B00430FE7 /* menuItem.png */; };
+		63D92F6A1ABFF09300430FE7 /* circleBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D92F691ABFF09300430FE7 /* circleBG.png */; };
+		63D92F6C1ABFF3C800430FE7 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D92F6B1ABFF3C800430FE7 /* rightArrow.png */; };
+		63D92F6E1ABFF3D200430FE7 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D92F6D1ABFF3D200430FE7 /* leftArrow.png */; };
 		63E3E39F1AA278F100F79723 /* addFriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E3E39E1AA278F100F79723 /* addFriend.png */; };
 		63ED32C91A9273BA00ECAD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32C81A9273BA00ECAD33 /* AppDelegate.swift */; };
 		63ED32CB1A9273BA00ECAD33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED32CA1A9273BA00ECAD33 /* ViewController.swift */; };
@@ -90,8 +96,14 @@
 		63A401171A984FA40038569D /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		63A4011A1A9851C40038569D /* sideBarNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarNavController.swift; sourceTree = "<group>"; };
 		63A4011C1A98523D0038569D /* sideBarTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarTableView.swift; sourceTree = "<group>"; };
-		63A467BE1AB4B37B00C6EEF6 /* orderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderVC.swift; sourceTree = "<group>"; };
 		63A467C21AB4D26100C6EEF6 /* startRunVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startRunVC.swift; sourceTree = "<group>"; };
+		63B215F01ABCBC150011F6D4 /* onARun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onARun.png; sourceTree = "<group>"; };
+		63B215F41ABCF4750011F6D4 /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		63B215F61ABCF5EE0011F6D4 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		63D92F671ABFC63B00430FE7 /* menuItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuItem.png; sourceTree = "<group>"; };
+		63D92F691ABFF09300430FE7 /* circleBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleBG.png; sourceTree = "<group>"; };
+		63D92F6B1ABFF3C800430FE7 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
+		63D92F6D1ABFF3D200430FE7 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArrow.png; sourceTree = "<group>"; };
 		63E3E39E1AA278F100F79723 /* addFriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFriend.png; sourceTree = "<group>"; };
 		63ED32C31A9273BA00ECAD33 /* perkomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perkomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED32C71A9273BA00ECAD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -230,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				63ED32E81A92740000ECAD33 /* perkomatic-Bridging-Header.h */,
+				63B215F61ABCF5EE0011F6D4 /* MenuItemCell.swift */,
+				63B215F41ABCF4750011F6D4 /* MenuItemCell.xib */,
 				63F6E7FD1AA8F5A100E8D22B /* notificationTableCell.swift */,
 				63F6E7FB1AA8F39600E8D22B /* notificationTableCell.xib */,
 				63F765A91AA58A630060AEE4 /* CustomTableViewCell.swift */,
@@ -239,7 +253,6 @@
 				63A401131A9849050038569D /* friendsVC.swift */,
 				63A467C21AB4D26100C6EEF6 /* startRunVC.swift */,
 				633124A21AB9CF8B0077A060 /* placeOrderVC.swift */,
-				63A467BE1AB4B37B00C6EEF6 /* orderVC.swift */,
 				6373E78F1A966E0F00CC754C /* dashboardVC.swift */,
 				639453501AA8208A003D79CE /* notificationsVC.swift */,
 				6373E78D1A965C7400CC754C /* signUpVC.swift */,
@@ -287,6 +300,11 @@
 		6565F24A1A9BC4D70018FE44 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				63D92F6D1ABFF3D200430FE7 /* leftArrow.png */,
+				63D92F6B1ABFF3C800430FE7 /* rightArrow.png */,
+				63D92F691ABFF09300430FE7 /* circleBG.png */,
+				63D92F671ABFC63B00430FE7 /* menuItem.png */,
+				63B215F01ABCBC150011F6D4 /* onARun.png */,
 				63894A241AB136620060FF5A /* newAddWhite.png */,
 				638DCF5F1AA63860008AEF19 /* groupIcon.png */,
 				63F7659F1AA54BAF0060AEE4 /* newAdd.png */,
@@ -382,15 +400,21 @@
 				63960CDD1A954A1800523B06 /* Raleway-Regular.ttf in Resources */,
 				63F9F2C91AA3A7CF00F10550 /* friendProfile.png in Resources */,
 				63F765A01AA54BAF0060AEE4 /* newAdd.png in Resources */,
+				63B215F11ABCBC150011F6D4 /* onARun.png in Resources */,
 				63960CE01A954A1800523B06 /* Raleway-Thin.ttf in Resources */,
 				63F765941AA53F860060AEE4 /* menuIcon.png in Resources */,
 				63ED32CE1A9273BA00ECAD33 /* Main.storyboard in Resources */,
 				63894A251AB136620060FF5A /* newAddWhite.png in Resources */,
 				63F6E7FC1AA8F39700E8D22B /* notificationTableCell.xib in Resources */,
 				63E3E39F1AA278F100F79723 /* addFriend.png in Resources */,
+				63D92F6A1ABFF09300430FE7 /* circleBG.png in Resources */,
 				63960CDB1A954A1800523B06 /* Raleway-Medium.ttf in Resources */,
+				63D92F6E1ABFF3D200430FE7 /* leftArrow.png in Resources */,
 				63ED32D31A9273BA00ECAD33 /* LaunchScreen.xib in Resources */,
 				63960CD91A954A1800523B06 /* Raleway-Light.ttf in Resources */,
+				63D92F681ABFC63B00430FE7 /* menuItem.png in Resources */,
+				63B215F51ABCF4750011F6D4 /* MenuItemCell.xib in Resources */,
+				63D92F6C1ABFF3C800430FE7 /* rightArrow.png in Resources */,
 				63F765A41AA55BEE0060AEE4 /* addedFriendTable.png in Resources */,
 				63ED32D01A9273BA00ECAD33 /* Images.xcassets in Resources */,
 				63F765A81AA588E60060AEE4 /* CustomTableViewCell.xib in Resources */,
@@ -417,9 +441,9 @@
 				6373E78E1A965C7400CC754C /* signUpVC.swift in Sources */,
 				63A4011B1A9851C40038569D /* sideBarNavController.swift in Sources */,
 				633124A31AB9CF8B0077A060 /* placeOrderVC.swift in Sources */,
+				63B215F71ABCF5EE0011F6D4 /* MenuItemCell.swift in Sources */,
 				63A401141A9849050038569D /* friendsVC.swift in Sources */,
 				63F6E7FE1AA8F5A100E8D22B /* notificationTableCell.swift in Sources */,
-				63A467BF1AB4B37B00C6EEF6 /* orderVC.swift in Sources */,
 				63A467C31AB4D26100C6EEF6 /* startRunVC.swift in Sources */,
 				63A401121A9848BC0038569D /* manageGroupVC.swift in Sources */,
 				6373E7901A966E0F00CC754C /* dashboardVC.swift in Sources */,
@@ -557,7 +581,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = perkomatic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "perkomatic-Bridging-Header.h";
@@ -575,7 +599,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = perkomatic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "perkomatic-Bridging-Header.h";
